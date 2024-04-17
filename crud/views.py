@@ -11,7 +11,9 @@ from django.http import HttpResponseRedirect
 from django.core.exceptions import ValidationError
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
-
+@login_required
+def ventas(request):
+        return render(request,'ventas.html')
 # Create your views here.
 @login_required
 def index(request):

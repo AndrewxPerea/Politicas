@@ -1,10 +1,13 @@
-<nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+<nav class="sb-sidenav accordion sb-sidenav-dark bg-primary"  id="sidenavAccordion">
+<img src="https://www.tucable.net/wp-content/uploads/2018/10/logo.png" width="190" height="100">
     <div class="sb-sidenav-menu">
+    
         <div class="nav">
-            <div class="sb-sidenav-menu-heading">Core</div>
+            <div class="sb-sidenav-menu-heading">Menu</div>
+            <!------
             <a class="nav-link" href="{% url 'home' %}">
                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                Dashboard
+                menu
             </a>
             <a class="nav-link" href="{% url 'list' %}">
                 <div class="sb-nav-link-icon"><i class="fas fa-fw fa-database"></i></div>
@@ -18,15 +21,29 @@
                 <div class="sb-nav-link-icon"><i class="fas fa-fw fa-bullseye"></i></div>
                 Ajax Crud
             </a>
-            <div class="sb-sidenav-menu-heading">Interface</div>
+            ------>
+            <div class="sb-sidenav-menu-heading">Índice</div>
             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                Users
+                Politicas
                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
             </a>
             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                 <nav class="sb-sidenav-menu-nested nav">
-                    <a class="nav-link" href="{% url 'users' %}">User List</a>
+                    <a class="nav-link" href="{% url 'ventas' %}">Ventas</a>
+                    <a class="nav-link" href="{% url 'home' %}">Puntos Adicionales</a>
+                    <a class="nav-link" href="{% url 'ventas' %}">Registro de Contratos</a>
+                    <a class="nav-link" href="{% url 'users' %}">Soporte Técnico</a>
+                    <a class="nav-link" href="{% url 'users' %}">PQR y derecho de peticion</a>
+                    <a class="nav-link" href="{% url 'users' %}"> Cambio de Clave</a>
+                    <a class="nav-link" href="{% url 'users' %}"> Cambio de Plan</a>
+                    <a class="nav-link" href="{% url 'users' %}">Cambios de Titularidad</a>
+                    <a class="nav-link" href="{% url 'users' %}">Anulacion de contratos</a>
+                    <a class="nav-link" href="{% url 'users' %}">Reconexiones </a>
+                    <a class="nav-link" href="{% url 'users' %}">suspenciones</a>
+                    <a class="nav-link" href="{% url 'users' %}">Pagos</a>
+                    <a class="nav-link" href="{% url 'users' %}">Solicitud de usuarios</a>
+                    <a class="nav-link" href="{% url 'users' %}">UPF</a>
                 </nav>
             </div>
             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
