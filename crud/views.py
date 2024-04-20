@@ -11,10 +11,179 @@ from django.http import HttpResponseRedirect
 from django.core.exceptions import ValidationError
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
+
+# Info Ventas
 @login_required
 def ventas(request):
-        return render(request,'ventas.html')
+    return render(request, 'ventas.html')
+
+# puntos adicionales
+
+
+@login_required
+def puntos_adicionales(request):
+    return render(request, 'puntosadicionales.html')
+
+# Registro de Contratos
+
+
+@login_required
+def r_contratos(request):
+    return render(request, 'rcontratos.html')
+
+
+@login_required
+def r_contratosuno(request):
+    return render(request, 'rcontratos1.html')
+
+
+@login_required
+def r_contratosdos(request):
+    return render(request, 'rcontratos2.html')
+
+
+@login_required
+def r_contratostres(request):
+    return render(request, 'rcontratos3.html')
+
+# Soporte
+
+
+@login_required
+def clave(request):
+    return render(request, 'clave.html')
+
+def soporte(request):
+    return render(request, 'soporte.html')
+
+
+@login_required
+def soporteuno(request):
+    return render(request, 'soporte1.html')
+
+
+@login_required
+def soportedos(request):
+    return render(request, 'soporte2.html')
+
+
+@login_required
+def soportetres(request):
+    return render(request, 'soporte3.html')
+
+
+@login_required
+def soportecuatro(request):
+    return render(request, 'soporte4.html')
+
+# PQR
+
+
+@login_required
+def pqr(request):
+    return render(request, 'pqr.html')
+
+
+@login_required
+def pqruno(request):
+    return render(request, 'pqr1.html')
+
+
+@login_required
+def pqrdos(request):
+    return render(request, 'pqr2.html')
+
+
+@login_required
+def ventas_uno(request):
+    return render(request, 'ventas1.html')
+
+
+@login_required
+def ventas_dos(request):
+    return render(request, 'ventas2.html')
+
+
+@login_required
+def ventas_tres(request):
+    return render(request, 'ventas3.html')
+
+#Traslados
+@login_required
+def traslados(request):
+    return render(request, 'traslados.html')
+
+@login_required
+def trasladosuno(request):
+    return render(request, 'traslados1.html')
+
+@login_required
+def trasladosdos(request):
+    return render(request, 'traslados2.html')
+
+@login_required
+def trasladostres(request):
+    return render(request, 'traslados3.html')
+
+#Cambio de plan
+
+@login_required
+def cambioplan(request):
+    return render(request, 'c_plan.html')
+
+def cambioplanuno(request):
+    return render(request, 'c_plan1.html')
+
+def cambioplandos(request):
+    return render(request, 'c_plan2.html')
+
+def cambioplantres(request):
+    return render(request, 'c_plan3.html')
+
+#Cambio de titulridad
+def titularidad(request):
+    return render(request, 'c_titularidad.html')
+
+#Desistimiento
+def desistimiento(request):
+    return render(request, 'desistimiento.html')
+
+def desistimientouno(request):
+    return render(request, 'desistimiento1.html')
+
+def desistimientodos(request):
+    return render(request, 'desistimiento2.html')
+
+#Reconexiones
+def reconexiones(request):
+    return render(request, 'reconexiones.html')
+
+#Suspenciones
+
+def suspenciones(request):
+    return render(request, 'suspenciones.html')
+def suspencionesuno(request):
+    return render(request, 'suspenciones1.html')
+
+#Pagos
+def pagos(request):
+    return render(request, 'pagos.html')
+def pagosuno(request):
+    return render(request, 'pagos1.html')
+
+
+#Solicitud usuarios
+def suser(request):
+    return render(request, 's_user.html')
+
+
+
+
+
+
 # Create your views here.
+
+
 @login_required
 def index(request):
     return render(request, 'index.html')
@@ -32,6 +201,7 @@ def list(request):
     except EmptyPage:
         members = paginator.page(paginator.num_pages)
     return render(request, 'list.html', {'members': members})
+
 
 @login_required
 def create(request):
@@ -55,6 +225,7 @@ def create(request):
     else:
         return render(request, 'add.html')
 
+
 @login_required
 def edit(request, id):
     members = Member.objects.get(id=id)
@@ -74,6 +245,7 @@ def update(request, id):
     member.save()
     messages.success(request, 'Member was updated successfully!')
     return redirect('/list')
+
 
 @login_required
 def delete(request, id):
@@ -102,8 +274,10 @@ def fileupload(request):
         context = {'documents': documents}
     return render(request, 'fileupload.html', context)
 
+
 def is_ajax(request):
     return request.META.get('HTTP_X_REQUESTED_WITH') == 'XMLHttpRequest'
+
 
 @login_required
 def ajax(request):
@@ -155,7 +329,8 @@ def ajax_delete(request):
 def register(request):
     if request.method == 'POST':
         form = RegistrationForm(request.POST)
-        import pdb;pdb.set_trace()
+        import pdb
+        pdb.set_trace()
         if form.is_valid():
             users = User(
                 username=form.cleaned_data['username'],
@@ -178,8 +353,10 @@ def register(request):
         form = RegistrationForm()
     return render(request, 'register.html', {'form': form})
 
+
 def register_success(request):
     return render(request, 'success.html')
+
 
 @login_required
 def users(request):
@@ -194,12 +371,14 @@ def users(request):
         users = paginator.page(paginator.num_pages)
     return render(request, 'users.html', {'users': users})
 
+
 @login_required
 def user_delete(request, id):
     user = User.objects.get(id=id)
     user.delete()
     messages.warning(request, 'User was deleted successfully!')
     return redirect('/users')
+
 
 @login_required
 def upload_csv(request):
@@ -229,7 +408,8 @@ def upload_csv(request):
             return render(request, 'upload_csv.html')
 
         if csv_file.multiple_chunks():
-            messages.warning(request, 'Uploaded file is too big (%.2f MB).' % (csv_file.size / (1000 * 1000),))
+            messages.warning(request, 'Uploaded file is too big (%.2f MB).' % (
+                csv_file.size / (1000 * 1000),))
             return render(request, 'upload_csv.html')
 
         file_data = csv_file.read().decode("utf-8")

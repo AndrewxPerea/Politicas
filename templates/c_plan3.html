@@ -1,0 +1,98 @@
+{% extends 'layout/app.html' %} {% load static %} {% block body %} {% include "elements/dropdowncplan.html" %}
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800 ">Cambio de Plan</h1>
+
+                   
+
+                    <div class="row">
+
+                        <div class="col-lg-12">
+
+                            <!-- Circle Buttons -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">DESEMPAQUETAMIENTO:</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        En los casos que el usuario desista del servicio de televisión y solicite cambio a plan de SOLO @ 50 MG, firma nuevo contrato. <br>
+                                        Se registra la solicitud en Work Drive, pestaña cambios de plan, aclarando en las observaciones que desiste de la televisión e indicado que
+                                        queda generada la orden de servicio, en tipo CAMBIO DE EQUIPO GP. Se hará ajuste en la mensualidad en los casos que pase de DUO a
+                                        SOLO @ por 64.000.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+
+                            <!-- Circle Buttons -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">GESTIÓN EN SISTEMA DESEMPAQUETAMIENTO TELEVISIÓN:</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        Eliminamos el plan que tiene registrado, en tipo de servicio "GPON", en descripción: Solicitamos el plan GPON solo @ 50MG y lo
+                                        añadimos.En los datos de la solicitud llenamos todos los campos y por ultimo solicitar servicio.
+                                        Generamos una orden de servicio. En detalles de la orden CAMBIO DE EQUIPO GP y registrar en las observaciones:
+                                        DESEMPAQUETAMIENTO RETIRA SERVICIO DE TV Y ESPECIFICAR EL PLAN CON EL QUE QUEDÓ.
+                                        En los casos que aplique solicitar cambio de número de contrato con Karen Botero auditoria@tucable.net o María Cristina López
+                                        quejasyreclamos@tucable.net
+                                        <table class ="table">
+                                            <tr>
+                                                <thead>
+                                                    <th>  PLAN ACTUAL </th>
+                                                    <th>NUEVO PLAN  </th>
+                                                    <th> FIRMA CONTRATO  </th>
+                                                    <th> AJUSTE ENSUALIDAD </th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th> 15 MG + TV</th>
+                                                        <th>15 MG SIN TV </th>
+                                                        <th>NO </th>
+                                                        <th> NO </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th> SOLO @ 50 MG</th>
+                                                        <th>15 MG SIN TV </th>
+                                                        <th>SI </th>
+                                                        <th> SI </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th> 100 MG + TV</th>
+                                                        <th>100 MG SIN TV </th>
+                                                        <th>NO </th>
+                                                        <th> NO </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th> 200 MG + TV</th>
+                                                        <th>200 MG SIN TV </th>
+                                                        <th>NO </th>
+                                                        <th> NO </th>
+                                                    </tr>
+                                                </tbody>
+
+                                            </tr>
+                                        </table>
+                                        Si solicita le sea informado el valor a pagar, hacemos un aproximado así: Liquidamos desde el 1 día del mes hasta el día en que está 
+                                        haciendo la solicitud con la tarifa del plan actual y del día siguiente hasta el último día del mes, con la tarifa del nuevo plan.
+                                        El ajuste sobre la facturación se debe realizar de manera inmediata. 
+
+                                          
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+                 {% endblock %} {% block javascript %} {% endblock %}

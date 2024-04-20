@@ -1,0 +1,65 @@
+{% extends 'layout/app.html' %} {% load static %} {% block body %} {% include "elements/dropdowncontratos.html" %}
+
+ <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800 ">Datos del abonado</h1>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3 text-center">
+                                    <h5 class="m-0 font-weight-bold text-primary">DATOS DE DIRECCIÓN Y RESIDENCIA:</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        *Seleccione el departamento y la ciudad. <br>
+                                        *Al seleccionar el barrio, automáticamente asigna la zona.<br>
+                                        Si el barrio NO ha sido creado en sistema debemos validar :<br>
+                                        1. Si hay cobertura en la zona, pero el barrio aún no ha sido
+                                        creado en sistema.<br>
+                                        2.Si no hay cobertura. Dicha confirmación la podemos validar 
+                                        con el asesor comercial que hizo el contrato o directamente con
+                                        el Coordinador Comercial de la zona<br>
+                                        En cualquiera de los dos casos antes de ingresar el contrato en el 
+                                        Sistema de Gestión de Clientes, debemos reportarlo de manera 
+                                        inmediata a Luisa Botero, a través del correo 
+                                        gestion.comunicacion@tucable.net haciendo claridad según sea 
+                                        el caso (opción 1 u opción 2), para que ella pueda proceder con la 
+                                        creación del barrio o dar adelanto a las labores de tendido de red.
+                                        Es importante resaltar que esto aplica para aquellas franquicias en 
+                                        las cuales se adelantan trabajos de construcción de redes.<br>
+                                        El que sigamos con sumo cuidado estas instrucciones garantizará
+                                        que podamos atender e instalar el servicio contratado dentro de los 
+                                        tiempos establecidos y evitará desistimientos e incomodidad en los
+                                        usuarios.<br>
+                                        *Seleccione la nomenclatura y el valor correspondiente. En datos de
+                                        la residencia el número de la casa.<br>
+                                        *En punto de referencia, registramos el plan contratado y las
+                                        observaciones en caso de existir.<br>
+                                        SOLICITUD DE INSTALACIÓN: Seleccionamos el tipo de servicio y
+                                        la descripción, una vez seleccionados los campos le damos click en
+                                        agregar.<br>
+                                        SUSCRIPCIÓN MENSUAL: Seleccione el tipo de servicio y en
+                                        descripción el tipo de plan solicitado por el titular, clic en agregar. <br> Una
+                                        vez agregado el plan se debe copia y pegar en el campo punto de
+                                        referencia, para que el técnico pueda saber que plan instalara.<br>
+                                        “Si se ha cometido un error en el momento del registro de la
+                                        suscripción mensual, se puede hacer click en el botón
+                                        ELIMINAR y repetir el proceso”.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- /.container-fluid -->
+
+{% endblock %} {% block javascript %} {% endblock %}

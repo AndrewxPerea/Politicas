@@ -1,0 +1,86 @@
+{% extends 'layout/app.html' %} {% load static %} {% block body %} {% include "elements/dropdowncontratos.html" %}
+
+  <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800 ">Adjuntar Achivos</h1>
+
+                   
+
+                    <div class="row">
+
+                        <div class="col-lg-12">
+
+                            <!-- Circle Buttons -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">ADJUNTAR ARCHIVOS:
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        Previamente el asesor comercial debe haber enviado los documentos
+                                        debidamente escaneados y marcados con la abreviatura indicada a
+                                        continuación más el número de contrato.<br>
+                                        • CT (contrato) + número de contrato.<br>
+                                        • CC (cédula)+ número de contrato.<br>
+                                        • FC (factura de servicio públicos)+ número de contrato.<br>
+                                        • RC (recibo de caja)+ número de contrato.<br>
+                                        • HD (Habeas Data) + número de contrato.<br>
+                                        • RUT + número de contrato.<br>
+                                        • C.COMERCIO + número de contrato<br>
+                                        • FT (Validación facial) + número de contrato.<br>
+                                        
+                                        Subimos las digitalizaciones, teniendo en cuenta el orden en la lista de selección. Cargar archivo en + y
+                                        agregamos. Repetimos el proceso hasta subir todos los documentos.<br>
+                                        Tenga en cuenta que la foto de validación facial debe ir en el campo VALIDACIÓN FACIAL. <br>
+                                        Una vez haya sido completada toda la información requerida se debe hacer click en el botón REGISTRAR
+                                        para ingresar los datos al sistema y completar el registro. El sistema emite el número de abonado asignado al
+                                        nuevo usuario.<br>
+                                        Vamos al módulo de cobranza y aplicamos el pago de la instalación, anexamos la tirilla de pago al contrato.
+                                        Se registra en el contrato con lápiz el número del abonado que arroja SAE PLUS y nombre del asesor.<br>
+                                        El sistema genera la orden de instalación.<br>
+                                        En caso de haber pagado puntos adicionales de TV al momento de la firma del contrato, se carga el valor a 
+                                        pagar.<br>
+                                        Este se carga por el módulo de abonados, click en el atajo o por el módulo de cobranza opción cargar 
+                                        deuda y se registra en el campo puntos adicionales. Tener en cuenta la política de puntos adicionales.<br>
+                                        Retoma del servicio: Usuarios que tuvieron solo televisión, están al día y firman nuevo contrato (televisión e 
+                                        internet), utilizamos el abonado de televisión y le adicionamos el servicio de internet.<br>
+                                        Se debe tener en cuenta que esto aplica para la franquicia PEREIRA. <br>
+                                        Lo anterior aplica siempre y cuando el nuevo servicio pertenezca a la misma zona (cuba), de lo 
+                                        contrario le generamos nuevo abonado en la franquicia que corresponda.<br>
+                                        Si al momento de la reutilización del abonado en la franquicia PEREIRA, no permite la adicón de la 
+                                        tecnología GPON, se escala con Luisa Botero, para que habilite la zona y nos permita continuar con el 
+                                        registro del contrato.<br>
+                                        Servicio Activo de Televisón en Franquicia Pereira: Si el servicio está activo y el usuario se acerca a oficina
+                                        a realizar algún trámite, ofrecemos la adición del internet de manera gratuita, por lo que firmamos un contrato 
+                                        ÚNICO DE SERVICIOS FIJOS en el cual relacionamos el valor del internet sin incluir televisión.<br>
+                                        Ejemplo: <br>
+                                        Si el cliente solicita un plan de internet 50 megas y televisión por valor de $77.000, el contrato de internet se 
+                                        hace por el valor del servicio de internet que en este casi es $37.000.
+
+                                       
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                   
+                   
+
+                </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- /.container-fluid -->
+
+    </div>
+    <!-- End of Main Content -->
+
+{% endblock %} {% block javascript %} {% endblock %}

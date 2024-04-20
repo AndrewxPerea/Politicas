@@ -1,0 +1,99 @@
+{% extends 'layout/app.html' %} {% load static %} {% block body %} {% include "elements/dropdownsuspenciones.html" %}
+<div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800 ">Suspenciones y Bajas del servicio</h1>
+
+                   
+
+                    <div class="row ">
+
+                        <div class="col-lg-12 ">
+
+                            <!-- Circle Buttons -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">SUSPENSIÓN TEMPORAL Y BAJA DEL SERVICIO</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        • En los casos de suspensión temporal y baja definitiva del
+                                        servicio aplica la misma gestión en sistema. <br>
+                                        • Hacer la devolución de la ONU o MAC, al almacén. Este
+                                        paso aplica en los casos que el equipo esté registrado en
+                                        SAE PLUS. Tener en cuenta, que la devolución se debe
+                                        hacer antes de realizar la orden de suspensión del
+                                        servicio, para que el usuario no quede en estatus
+                                        CORTADO. Los pasos a seguir son:<br>
+                                        • Abonados.<br>
+                                        • -Consultar abonado.<br>
+                                        • -Datos de equipo.<br>
+                                        • -Devolver.<br>
+                                        • -Seleccionar el equipo.<br>
+                                        • -Llenas los campos de datos de solicitud.
+                                        • -En estado del equipo, BUENO.<br>
+                                        • -Devolver.<br>
+                                        • Hacer solicitud de suspensión del servicio de televisión, y/o
+                                        internet y televisión en SAE PLUS, a través de los atajos, o
+                                        por módulo de Operaciones, en este último caso la ruta es la
+                                        siguiente:<br>
+                                        • -Operaciones.<br>
+                                        • -Ordenes técnicas.<br>
+                                        • -Crear Orden. (Consultar abonado o traerlo por el
+                                        historial)<br>
+                                        • -Tipo orden: Orden de servicios.<br>
+                                        • -Detalle de orden: Suspensión de Televisión y/o
+                                        Suspensión de Tv e Internet.<br>
+                                        En las observaciones siempre debemos dejar registrado:
+                                        • Número del precinto asociado.<br>
+                                        • No borramos el precinto de la sección DATOS DEL
+                                        CONTRATO.<br><br>
+                                        
+                                        Registrar si entregó el módem o no. En caso de haberlo
+                                        entregado registramos el serial de la ONU borramos el
+                                        serial del módem de la sección datos del contrato.Si el
+                                        módem que entrega no coincide con el registrado en
+                                        sistema, dejamos registrado en la orden el serial del que
+                                        nos entrega y el serial del que está relacionado en sistema.<br>
+                                        Si quedó al día en pagos o no (Esto no quiere decir que
+                                        registremos en la orden de servicio el valor del saldo
+                                        pendiente).<br>
+                                        Registrar el motivo del retiro del servicio.
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 ">
+
+                            <!-- Circle Buttons -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">INFORMACIÓN IMPORTANTE
+                                    </h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        En los casos en que un usuario este en estado cortado 
+                                        por mora en la factura (corte Logico) y se acerque a 
+                                        oficina a pagar los saldos pendientes y hacer entrega 
+                                        del equipo y su cargador, se debe activar con la 
+                                        finalidad de cargar la factura del mes en que se genero 
+                                        el corte y ajustar el valor a pagar mediante nota crédito. 
+                                        Una vez realizado este procedimiento procedemos a 
+                                        hacer la devolución de la ONU y la orden de suspensión, 
+                                        recuerden por favor que FIRMA PLANILLA DE RETIROS.
+
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    
+                    </div>
+                    
+
+
+                </div>
+                  {% endblock %} {% block javascript %} {% endblock %}

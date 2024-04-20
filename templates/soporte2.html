@@ -1,0 +1,83 @@
+      {% extends 'layout/app.html' %} {% load static %} {% block body %} {% include "elements/dropdownsoporte.html" %}
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800 ">Generacion de orden</h1>
+    
+    
+    
+                    <div class="row">
+    
+                        <div class="col-lg-12">
+    
+                            <!-- Circle Buttons -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">COMO GENERAR UNA ORDEN DEPENDIENDO DE
+                                        LA NECESIDAD:</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        • CABLE CAÍDO: Para casos de falla con el
+                                        servicio de televisión, generalmente por caída del
+                                        mismo.<br>
+                                        • CAÍDA DE SISTEMA: Por reportes de sin servicio
+                                        que incluye internet y televisión.<br>
+                                        • CONEXIONES DEFECTUOSAS: Para revisiones
+                                        prioritarias.<br>
+                                        • OTROS: Para revisiones con tiempo de ejecución
+                                        de 8 a 10 días hábiles, servicios no prioritarios.
+                                        • CAMBIO DE EQUIPO GP:<br> Para servicio que
+                                        cambian de plan de dúo a solo internet. Quienes
+                                        tengan los permisos en la SmartOLT, deben dejar
+                                        inactiva la televisión. (Ver política de
+                                        desempaquetamiento página 27).<br>
+                                        • CAMBIO DE PLAN SOLO @ A DUO: <br>Para
+                                        servicios que por cambio de plan de solo internet
+                                        a dúo requieren la instalación de los puntos de
+                                        televisión y el cambio en la ONT (Ver política de
+                                        empaquetamiento página 25)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+    
+                        <div class="col-lg-12">
+    
+                            <!-- Circle Buttons -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">VALORES DE SERVICIOS</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        A continuación se relacionan los servicios que generan
+                                        cobro al usuario:<br>
+                                        ✓ Manipulación: $30.000.<br>
+                                        ✓ Punto Adicional antes de Instalación: $20.000. Este valor
+                                        aplica durante la visita técnica.<br>
+                                        ✓ Punto Adicional después de Instalación: $30.000. Este
+                                        valor aplica cuando se debe generar una nueva visita
+                                        técnica.<br>
+                                        ✓ Reconexión Internet y Televisión: $30.000.<br>
+                                        ✓ Traslado Internet y Televisión: $30.000.<br>
+                                        ✓ Reubicación de Acometida: $30.000.<br>
+                                        ✓ Metro de cable adicional $2.000 (EOC hasta 30 metros
+                                        autorizados y GPON son 60 metros).<br>
+    
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+    
+                </div>
+
+            </div>
+        </div>
+             {% endblock %} {% block javascript %} {% endblock %}

@@ -1,0 +1,63 @@
+   {% extends 'layout/app.html' %} {% load static %} {% block body %} {% include "elements/dropdowntraslados.html" %}
+   <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800 ">TRASLADO GESTIÓN EN SISTEMA</h1>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3 text-center">
+                                    <h5 class="m-0 font-weight-bold text-primary">Traslado en la zona</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        Consultar abonado.<br>
+                                        Verificar que haya quedado a paz y salvo por todo
+                                        concepto (Saldos de facturación, entrega de módem y
+                                        cargador en los casos que aplique).<br>
+                                        Solicitar copia del recibo público de la nueva vivienda.
+                                        En el módulo Administración, asignar y procesar el número
+                                        del contrato registrado en sistema con la serie AN
+                                        (anulado).<br>
+                                        MÓDULO ADMINISTRACIÓN<br>
+                                        ASIGNAR CONTRATOS:<br>
+                                        ✓ Seleccionar nombre de quien está haciendo la gestión.<br>
+                                        ✓ Serie AN<br>
+                                        ✓ Contrato desde-Contrato hasta<br>
+                                        ✓ Validar<br>
+                                        ✓ Registrar Ej: (AN001234)<br>
+                                        PROCESAR CONTRATOS:<br>
+                                        ✓ Seleccionar nombre de quien está haciendo la gestión.<br>
+                                        ✓ En el recuadro buscar digitamos el contrato para que lo 
+                                        muestre.<br>
+                                        ✓ Seleccionar contrato<br>
+                                        ✓ Recibido.<br>
+                                        Al realizar este proceso enviamos un correo a
+                                        auditoria@tucable.net, solicitando la asignación del
+                                        contrato con serie AN o podemos comunicarnos
+                                        directamente con Karen Botero o María Cristina López.
+                                        Una vez realizado el proceso anterior y habiendo sido
+                                        realizado el cambio del contrato en el abonado, vamos
+                                        nuevamente al módulo de administración, asignamos y
+                                        procesamos el número de contrato sin serie.<br>
+                                        En el MODULO DE ABONADOS registramos al titular en 
+                                        la nueva franquicia.<br>
+                                        Tener en cuenta que en la descripción del TIPO DE
+                                        SERVICIO, seleccionamos “Instalación por traslado
+                                        entre agencias $30.000”<br>
+                                        Se descargan los documentos adjuntos que tiene en la
+                                        anterior franquicia y se adjuntan al nuevo abonado junto
+                                        con el nuevo recibo público.<br>
+                                        Se aplica el pago y se entrega la tirilla de pago al
+                                        usuario.<br>
+                                        No realizo orden de servicio, ya que al aplicar el pago,
+                                        se genera de manera automática la orden de instalación.
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                     {% endblock %} {% block javascript %} {% endblock %}

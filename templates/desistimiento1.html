@@ -1,0 +1,65 @@
+{% extends 'layout/app.html' %} {% load static %} {% block body %} {% include "elements/dropdowndesistimiento.html" %}
+<div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800 ">Desistimiento de Contrato</h1>
+
+                   
+
+                    <div class="row ">
+
+                        <div class="col-lg-12 ">
+
+                            <!-- Circle Buttons -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Gestion en sistema</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        Consultamos al usuario para verificar la información y
+                                        validar si el reintegro es solo por el valor correspondiente a
+                                        la instalación del servicio o incluye también el valor de la
+                                        primera mensualidad. <br>
+                                        Ruta para hacer el procedimiento de la anulación de la
+                                        orden de servicio, vamos a:<br>
+                                        Módulo de Operaciones:<br>
+                                        ✓ Órdenes técnicas.<br>
+                                        ✓ Asignar/imprimir orden.<br>
+                                        ✓ Traemos el abonado por el histórico.<br>
+                                        ✓ Seleccionamos grupo de trabajo.<br>
+                                        ✓ Seleccionamos la orden desde la franja blanca.
+                                        ✓ Le damos imprimir en caso de no haber sido impresa 
+                                        pero no la enviamos a la impresora.<br>
+                                        Luego vamos al MÓDULO OPERACIONES opciones:<br>
+                                        ✓ Órdenes técnicas / Finalizar Orden.<br>
+                                        ✓ Traemos la orden por el histórico. En el campo
+                                        observaciones dejamos registro detallado del motivo
+                                        por el cual desiste del servicio, el valor que se reintegra
+                                        y si entregó las copias azules del contrato y el original
+                                        del recibo de caja.<br>
+                                        ✓ Cancelar orden.<br>
+                                        El estatus pasa a ANULADO<br>
+                                        En aquellos casos que el contrato, no haya sido
+                                        registrado en sistema, lo anulamos en módulo de
+                                        administración, por contratos y recibos, procesar
+                                        contratos, seleccionamos el contrato y clic en anulado.<br>
+                                        El contrato físico debe llevar el sello de anulado.<br>
+                                        **Las agencias de Samaria, Villa Santana, Altagracia y
+                                        Parque Industrial, deben hacer la solicitud para que
+                                        realice la cancelación de la cuenta PPPoE a través del
+                                        correo electrónico gestion.comunicacion@tucable.net En
+                                        asunto: Desistimiento y anexar la información requerida.
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    
+                    </div>
+                    
+
+
+      </div>
+      {% endblock %} {% block javascript %} {% endblock %}

@@ -1,0 +1,62 @@
+{% extends 'layout/app.html' %} {% load static %} {% block body %} {% include "elements/dropdowncplan.html" %}
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-4 text-gray-800 ">Cambio de Plan</h1>
+
+    
+
+    <div class="row">
+
+        <div class="col-lg-12">
+
+            <!-- Circle Buttons -->
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">INFORMACIÓN DADA POR EL GRUPO ADMINISTRATIVO EL 07 DE JUNIO DE 2023</h6>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Puntos para aclarar con relación a los cambios de plan, empaquetamientos y desempaquetamientos. <br>
+                        En el momento en que recibimos una solicitud para cambio de plan, podemos ofrecer 2 opciones al titular del servicio, sin olvidar que en 
+                        todos los casos se requiere firma de nuevo contrato:<br>
+                        OPCIÓN # 1: Cambio de plan inmediato.<br>
+                        En este caso, informamos que el cambio de plan será ejecutado durante las 24 horas siguientes, aclarar que se genera un ajuste en la 
+                        factura. <br>
+                        Este ajuste se hará de la siguiente manera: Liquidamos del 1 del mes hasta el día anterior a la solicitud con la tarifa del plan actual y del 
+                        día de solicitud hasta el último día del mes, con la tarifa del nuevo plan, dependiendo del tipo de cambio solicitamos N.C o N.D.
+                        <table class="table">
+                            <thead>
+                                <tr class="table-primary">
+                                    <th  >Dia anterior a la solicitud</th>
+                                    <th >Dia de la solicitud</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <th> Se liquida con el plan actual. </th>
+                                <th>Se liquida con el nuevo plan hasta la 
+                                    fecha de corte de facturación. (28, 30 
+                                    o 31 de cada mes.)</th>
+                            </tbody>
+                        </table>
+                        OPCIÓN # 2: Cambio de plan a partir del primer día del siguiente mes.<br>
+                        Aclaramos que durante el mes que está transcurriendo, tendrá el mismo plan y por ende, el mismo valor de facturación. A partir del día 1 
+                        del siguiente mes, se hará efectivo el cambio de plan solicitado, con la tarifa correspondiente. <br>
+                        En ambos casos se debe tener en cuenta lo siguiente: <br>
+                        Si al momento de la solicitud la factura ya ha sido emitida, se genera el cambio de plan en sistema y se registra la solicitud en SOPORTE 
+                        TÉCNICO INTERNO, pestaña cambios de plan, aclarando en las observaciones si el cambio es inmediato o si se debe ejecutar a partir 
+                        del primer día del siguiente mes. <br>
+                        Si la factura del mes actual no se ha emitido, la generamos; acto seguido procedemos a realizar el cambio de plan en sistema y lo 
+                        registramos en SOPORTE TÉCNICO INTERNO, pestaña cambios de plan, aclarando en las observaciones si el cambio es inmediato o si 
+                        se debe ejecutar a partir del primer día del siguiente mes
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+     {% endblock %} {% block javascript %} {% endblock %}
+                    
+
+
+             

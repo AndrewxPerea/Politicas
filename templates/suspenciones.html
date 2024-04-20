@@ -1,0 +1,121 @@
+  {% extends 'layout/app.html' %} {% load static %} {% block body %} {% include "elements/dropdownsuspenciones.html" %}
+  <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800 ">Suspenciones y Bajas del servicio</h1>
+
+                   
+
+                    <div class="row ">
+
+                        <div class="col-lg-6 ">
+
+                            <!-- Circle Buttons -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">SUSPENSION TEMPORAL</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        • Requisitos: <br>
+                                        • Tramitar presencialmente en oficina.<br>
+                                        • Presentar solicitud directa por parte del titular del servicio, (En casos
+                                        excepcionales se puede hacer mediante llamada telefónica o WhatsApp,
+                                        previa validación de titularidad o autorizando de manera escrita a un tercero
+                                        para que lo represente ante la empresa). Mínimo 3 días hábiles antes de la
+                                        fecha de corte de facturación (30 de cada mes).<br>
+                                        • Estar al día en pagos o en su defecto cancelar al momento de la solicitud.
+                                        (En casos muy puntuales realizar acuerdo de pago, el cual debe quedar
+                                        registrado SAE PLUS, pestaña observaciones, Asunto: Acuerdo de pago y
+                                        en observaciones la descripción del acuerdo).<br>
+                                        • Hacer entrega del módem y su respectivo cargador (en caso de no entregar el
+                                        cargador deberá pagar el costo de .” En algunos casos el titular deja el
+                                        módem en su casa, por lo que debemos dejar el registro en las
+                                        observaciones de la orden de suspensión.<br>
+                                        • Llenar la planilla de retiros, en la cual se deben llenar todos los espacios,
+                                        especificando si entregó o no el módem, si está al día o queda con saldos
+                                        pendientes y debe ser firmada por el titular del servicio. (Aplica para oficina
+                                        propias de la marca).<br>
+                                        • La suspensión temporal del servicio se dará hasta por dos meses (60 días)
+                                        continuos o discontinuos durante el transcurso de cada año calendario. Si el
+                                        usuario quedo al día por todo concepto, No cancela reconexión. En
+                                        caso de superar los dos meses debe FIRMAR NUEVO CONTRATO y
+                                        cancelar el valor correspondiente a instalación.<br>
+                                        • Si el usuario solicita la suspensión días después de la fecha del corte de
+                                        facturación (30 del mes), se debe cargar la factura del mes que está
+                                        transcurriendo y hacer nota crédito para ajustar el valor del prorrateo, realice
+                                        o no el pago al momento de la solicitud.<br>
+                                        • En caso de quedar con saldos pendientes se debe registrar en SAE PLUS,
+                                        para recaudar el saldo pendiente.<br>
+                                        • **Las agencias de Samaria, Villa Santana, Altagracia y Parque Industrial.
+                                        deben hacer la solicitud a través del correo electrónico
+                                        auditoria@tucable.net con copia a gestion.comunicacion@tucable.net En
+                                        asunto: SUSPENSIÓN TEMPORAL y anexar la información requerida, para
+                                        la respectiva cancelación en WINBOX.<br>
+                                        • Es muy importante validar que el serial de la ONU que nos esta
+                                        entregando corresponde con el registrado en sistema, en caso de no
+                                        coincidir, dejamos registro en la orden del serial de la ONU entregada y
+                                        de la que esta relacionada en sistema.
+
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 ">
+
+                            <!-- Circle Buttons -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">BAJA DEL SERVICIO</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        Requisitos:<br>
+                                        Tramitar presencialmente en oficina.<br>
+                                        • Presentar solicitud directa por parte del titular del servicio, (En casos
+                                        excepcionales se puede hacer mediante llamada telefónica o
+                                        WhatsApp, previa validación de titularidad o autorizando de manera
+                                        escrita a un tercero para que lo represente ante la empresa). Mínimo 3
+                                        días hábiles antes de la fecha de corte de facturación (30 de cada
+                                        mes).<br>
+                                        • Estar al día en pagos o en su defecto cancelar al momento de la
+                                        solicitud. (En casos muy puntuales realizar acuerdo de pago, el cual
+                                        debe quedar registrado SAE PLUS, pestaña observaciones, Asunto:
+                                        Acuerdo de pago y en observaciones la descripción del acuerdo).<br>
+                                        • Hacer entrega del módem y su respectivo cargador.(en caso de no 
+                                        entregar el cargador deberá pagar el costo de ). Es muy importante 
+                                        validar que el serial de la ONU que nos esta entregando corresponde 
+                                        con el registrado en sistema, en caso de no coincidir, dejamos registro 
+                                        en la orden del serial de la ONU entregada y de la que esta relacionada 
+                                        en sistema. <br>
+                                        • Llenar la planilla de retiros, en la cual se deben diligenciar todos los
+                                        espacios, especificando si entregó o no el módem, si está al día o
+                                        queda con saldos pendientes y debe ser firmada por el titular del
+                                        servicio o por la persona que haya sido autorizada para hacer el
+                                        trámite. (Aplica para Oficina propias de la marca).<br>
+                                        • Si el usuario solicita la baja del servicio días después de las fecha del
+                                        corte de facturación (30 del mes), se debe cargar la factura del mes
+                                        que está transcurriendo y hacer nota crédito para ajustar el valor del
+                                        prorrateo, realice o no el pago al momento de la solicitud.<br>
+                                        IMPORTANTE<br><br>
+                                        En el caso que un tercero se acerque a la oficina con el módem y su 
+                                        cargador, no lo devolvemos, recibimos el equipo y nos contactamos
+                                        con el titular para confirmar que desea la baja del servicio. Si no 
+                                        logramos comunicarnos, hacemos firmar la planilla a la persona
+                                        que está haciendo la entrega y dejamos registro en la pestaña de
+                                        observaciones
+
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    
+                    </div>
+                    
+
+
+                </div>
+                  {% endblock %} {% block javascript %} {% endblock %}

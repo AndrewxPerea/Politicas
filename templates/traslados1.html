@@ -1,0 +1,66 @@
+       {% extends 'layout/app.html' %} {% load static %} {% block body %} {% include "elements/dropdowntraslados.html" %}
+      <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800 ">TRASLADO GESTIÓN EN SISTEMA</h1>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3 text-center">
+                                    <h5 class="m-0 font-weight-bold text-primary">Traslado en la zona</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        Consultar abonado.<br>
+                                        • Actualizar datos (teléfonos, correo electrónico y puntos 
+                                        adicionales si los hay).<br>
+                                        • Cargar valor del servicio ($30.000) desde la pantalla de
+                                        abonados o por el módulo de Cobranza así:<br>
+                                        Por atajos<br>
+                                        • Tipo de cargo: Único.<br>
+                                        • Tipo de servicio: Internet/Televisión.<br>
+                                        • Clasificación: Traslado.<br>
+                                        • Descripción: Traslado Internet y/o TV.<br>
+                                        • Botón +AGREGAR.<br>
+                                        • Cargar deuda.<br>
+                                        Por módulo de Cobranza<br>
+                                        • Opción de cargar deuda.<br>
+                                        • Tipo de cargo: Único.<br>
+                                        • Tipo de servicio: Internet/Televisión.<br>
+                                        • Clasificación: Traslado.<br>
+                                        • Descripción: Traslado Internet y/o TV.<br>
+                                        • Botón +AGREGAR.<br>
+                                        • Cargar deuda.
+                                        En el módulo de cobranza aplicamos el pago de:<br>
+                                        1. El traslado<br>
+                                        2. La factura si desea pagarla o si está vencida.<br>
+                                        3. El punto adicional si fue solicitado.<br>
+                                        Recuerde registrar en sistema el o los puntos adicionales
+                                        solicitados por el cliente, en el campo PUNTOS
+                                        ADICIONALES.<br>
+                                        • Generar orden de servicio, por atajos o por el módulo 
+                                        Operaciones.<br>
+                                        • En el campo descripción de la orden, dejamos registro 
+                                        de:<br>
+                                        • Precinto.<br>
+                                        • Registrar la anterior dirección.<br>
+                                        • Si pagó o no el servicio solicitado.<br>
+                                        • Número de puntos de TV a trasladar, incluido si pagó 
+                                        un punto adicional.<br>
+                                        • Si entregó copia del recibo público o no.<br>
+                                        • Si solicitó cambio de plan se deja la observación.<br>
+                                        Se llenan los campos solicitados, en la orden de servicio.<br>
+                                        • Eliminar el recibo público que tiene, escanear el nuevo, 
+                                        subirlo y actualizar el estrato.<br>
+                                        • Realizar cambio de plan en sistema en caso de ser 
+                                        necesario y registrarlo en WorkDrive.<br>
+                                        *Los tiempos del servicio varían según la agencia.<br>
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                     {% endblock %} {% block javascript %} {% endblock %}

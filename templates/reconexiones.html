@@ -1,0 +1,211 @@
+{% extends 'layout/app.html' %} {% load static %} {% block body %}
+<div class="container-fluid">
+  <h1 class="h3 mb-4 text-gray-800">Reconexiones</h1>
+  
+  <div class="row">
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide carousel-dark slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+      <div class="carousel-item active">
+      <div class="row">
+    <div class="col-lg-12">
+      <div class="card shadow mb-4">
+        <div class="card-header py-3 text-center">
+          <h5 class="m-0 font-weight-bold text-primary">RECONEXIÓN POR UNA FACTURA VENCIDA</h5>
+        </div>
+        <div class="card-body">
+          <p>
+                                        Tramitar por:<br>
+                                        • Oficinas: Pagos en efectivo.<br>
+                                        • Correo o líneas de Call Center: Pagos por transferencia a Scotiabank
+                                        Colpatria o a través de la aplicación MiPagoAmigo.<br><br>
+                                        • Actualizar datos del titular del servicio (Líneas telefónicas y correo
+                                        electrónico).<br>
+                                        • Requisitos para generar una reconexión:<br><br>
+                                        • Opción 1: Cancelar la factura vencida y el valor de la reconexión
+                                        ($30.000)<br><br>
+                                        • Opción 2: Cancelar la factura vencida y la factura del mes que está
+                                        transcurriendo, en cuyo caso se exonera el cargo por reconexión del
+                                        servicio.<br><br>
+                                        • Opción 3: Por medio de acuerdo de pago. Cancelar la factura vencida y el
+                                        valor de la reconexión $30.000, dando como opción abonar este valor a la
+                                        próxima factura. Se debe cargar el valor de la reconexión y se solicita nota
+                                        crédito al momento que pague el saldo en la fecha acordada. Se debe dejar
+                                        registro en la pestaña observaciones e informar al usuario que al momento
+                                        de cancelar el saldo debe solicitar el descuento de la reconexión. Si el
+                                        usuario incumple el acuerdo de pago deberá asumir el valor de la reconexión,
+                                        no se debe hacer un nuevo acuerdo.<br>
+                                        • Es importante tener en cuenta que NO es el usuario quien establece la
+                                        fecha de acuerdo de pago, esto corresponde al funcionario.
+                                        • En casos especiales se debe hacer el escalamiento con el canal a oficinas.<br><br>
+                                        • Opción 4: Esta opción es el último recurso, ya que es la
+                                        • exoneración del valor de la reconexión. Se da con:<br>
+                                         Usuarios nuevos cortados por prorrateo<br>
+                                         Usuarios que tengan un estado de cuenta impecable.<br>
+                                         Casos excepcionales previa autorización.<br>
+                                         Antes de ofrecer esta opción debemos validar en la pestaña
+                                        observaciones que no haya tenido exoneraciones.<br>
+                                         Una vez realizado el pago la reconexión se efectuará en el
+                                        transcurso del día.
+
+                                        
+                                    </p>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>>
+        <div class="carousel-item ">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="card shadow mb-4">
+                <div class="card-header py-3 text-center">
+                  <h5 class="m-0 font-weight-bold text-primary">
+                    RECONEXIONES PARA FRANQUICIAS CON 
+                                        APROVISIONAMIENTO.
+                  </h5>
+                </div>
+                <div class="card-body">
+                   <p>
+                                        El aprovisionamiento se trata de sincronizar todas las
+                                        órdenes realizadas sobre nuestra RouterBoard y/o OLT
+                                        desde SAE PLUS, lo que incluye los cortes y las
+                                        reconexiones, por lo que cuando aplicamos el pago de
+                                        acuerdo a la política ofrecida, la reconexión se da manera
+                                        inmediata.<br>
+                                        ¿Como confirmar que la reconexión ha sido efectiva? :<br>
+                                        Desde el modulo COBRANZA o por el modulo de
+                                        ABONADOS, seleccionamos la pestaña MÁS OPCIONES,
+                                        luego:<br>
+                                        Eventos equipos, aquí podremos confirmar que el comando
+                                        sea exitoso observando el comando y revisando la
+                                        respuesta del mismo.<br>
+                                        ✓Todo usuario que pague para reconectar el servicio debe
+                                        ser validado en Evento equipos y debe ser reportado en
+                                        el archivo WorkDrive de cortes correspondiente al mes.<br>
+                                        ✓Si el pago para reconectar el servicio se da después del
+                                        14 del mes y el estatus es cortado, una vez aplicado el
+                                        pago, debemos cargar la factura del mes que esta
+                                        transcurriendo. Solo en el caso que el usuario solicite
+
+                                    </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card shadow mb-4">
+                <div class="card-header py-3 text-center">
+                  <h5 class="m-0 font-weight-bold text-primary">
+                    RECONEXIÓN POR CORTE EN TERRENO
+                  </h5>
+                </div>
+                <div class="card-body">
+                  <p>
+                                        Tramitar por:<br>
+                                        Oficinas: Pagos en efectivo.<br>
+                                        • Correo o líneas de Call Center: Pagos por transferencia a
+                                        Scotiabank Colpatria o a través de la aplicación
+                                        MiPagoAmigo.<br><br>
+                                        Actualizar datos del titular del servicio (Líneas
+                                        telefónicas y correo electrónico).<br><br>
+                                        Requisitos para generar una reconexión en terreno:<br>
+                                        • Cancelar el valor total que adeuda a la empresa. Si la
+                                        cuantía de la deuda es igual a una (1) factura, cancela
+                                        adicionalmente el valor de la reconexión ($30.000).<br>
+                
+                                        • Si la cuantía de la deuda es superior a una factura (1)
+                                        cancela la totalidad y se exonera el cargo de la
+                                        reconexión.<br>
+                                        • Validar si el módem fue entregado o si por el contrario
+                                        lo conserva en casa.<br>
+                                        • Se debe tener en cuenta que en caso de pérdida del
+                                        modem el titular deberá cancelar el valor del equipo el
+                                        cual es de doscientos ochenta mil pesos m/cte
+                                        ($280.000)
+                                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item ">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="card shadow mb-4">
+                <div class="card-header py-3 text-center">
+                  <h5 class="m-0 font-weight-bold text-primary">IMPORTANTE</h5>
+                </div>
+                <div class="card-body">
+                 <p>
+                                        Si la orden está en estatus por cortar y no ha hecho
+                                        entrega del módem, se debe generar el cobro de los
+                                        meses de televisión que están pendientes por factura
+                                        hasta la fecha.<br>
+                                        • Si esta en estatus por cortar, se cancela la orden de
+                                        corte en terreno y se remite la solicitud al área de
+                                        soporte para reconectar de manera remota al correo
+                                        gestion.comunicacion@tucable.net (en caso de tener
+                                        el modem en casa).<br>
+                                        • Si corresponde a una franquicia con
+                                        aprovisionamiento, y el estatus es por cortar, el
+                                        proceso a realizar es:<br>
+                                        1. Cancelar la orden de corte en terreno.<br>
+                                        2. Procesar el pago.<br>
+                                        3. Aceptar la orden de reconexión.<br>
+                                        Se debe hacer el proceso en este orden.<br>
+                                        Si esta en estatus cortado, se genera una orden de
+                                        servicio por reconexión en la cual se debe especificar si
+                                        tiene el modem en casa o si se debe asignar.<br>
+                                        • La reconexión se realizará en terreno en un termino
+                                        de tres (3) días hábiles contados a partir del día
+                                        siguiente de haber realizado el pago.<br>
+                                        NUNCA SE REALIZARÁ ORDEN DE RECONEXIÓN SI
+                                        QUEDAN SALDOS PENDIENTES.<br>
+                                        ACLARACIÓN: Cuando un usuario tiene todo los 
+                                        servicios suspendidos en sistema y tiene deuda, para 
+                                        nosotros siempre será una reconexión, 
+                                        independientemente de si tiene el módem o no y 
+                                        cobramos según sea el caso, teniendo en cuenta la 
+                                        política de reconexión ya mencionada Y NO FIRMA 
+                                        NUEVO CONTRATO PORQUE ES UN SERVICIO 
+                                        CORTADO TIENE DEUDA EN SISTEMA Y SE 
+                                        MANEJA COMO RECONEXIÓN
+                                        
+                                    </p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+</div>
+
+
+
+                 {% endblock %} {% block javascript %} {% endblock %}

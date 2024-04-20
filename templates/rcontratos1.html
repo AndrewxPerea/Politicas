@@ -1,0 +1,150 @@
+{% extends 'layout/app.html' %} {% load static %} {% block body %} {% include "elements/dropdowncontratos.html" %}
+
+ <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800 ">Registro de Contratos</h1>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3 text-center">
+                                    <h5 class="m-0 font-weight-bold text-primary">REGISTRO DE ABONADO:</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        ¡Recuerde! En el caso que haya tenido servicios con la
+                                        compañía y esté al día, utilizamos el mismo abonado
+                                        validando la franquicia.<br>
+                                        Para el registro de datos personales, estrato y dirección, nos
+                                        basamos en los documentos aportados (documento de
+                                        identificación, recibo público).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-6">
+
+                            <!-- Circle Buttons -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">DATOS DEL CONTRATO:</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        Tenga en cuenta seleccionar la franquicia correspondiente: <br>
+
+                                        <ul>
+                                            <li>
+                                                TC-TuCable Of. Ppal y Éxito.
+                                            </li>
+                                            <li>
+                                                VG- La Virginia.
+                                            </li>
+                                            <li>
+                                                SR- Santa Rosa de Cabal.
+                                            </li>
+                                            <li>
+                                                SR- Santa Rosa de Cabal.
+                                            </li>
+                                            <li>
+                                                CH-Chinchiná.
+                                            </li>
+                                            <li>
+                                                AL-Altagracia.
+                                            </li>
+                                            <li>
+                                                PQ- Parque Industrial
+                                            </li>
+                                            <li>
+                                                C-Cartago.
+                                            </li>
+                                            <li>
+                                                DQ-Dosquebradas.
+                                            </li>
+                                            <li>
+                                                TCF-TuCable Fase II.
+                                            </li>
+                                            <li>
+                                                SM-Samaria.
+                                            </li>
+                                            <li>
+                                                VS-Villa Santana
+                                            </li>
+
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+
+                            <!-- Circle Buttons -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Estrato socioeconómico:</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                       
+                                        Al registrar este campo, es muy importante revisar bien la información registrada en el recibo  público,
+                                        ya que un error en este campo tiene implicaciones
+                                        tributarias para la compañía.<br>
+                                        Si el tipo de documento es NIT debe registrarse como estrato 
+                                        comercial.<br>
+                                        El estrato cero se utilizará en personas naturales y cuando el recibo 
+                                        así lo indique.<br>
+                                        Adjunto dejamos una guía para aquellos casos en los cuales el 
+                                        recibo tiene el estrato como bajo, medio o alto.<br>
+                                        <img src="img/estrato.png" width="350" height="155">
+
+                            </div>
+                        </div>
+                    </div>
+                  
+
+
+                   
+                   
+
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3 text-center">
+                                <h5 class="m-0 font-weight-bold text-primary">DATOS DEL ABONADO</h5>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Continúe el proceso seleccionando el vendedor y número de 
+                                    contrato. <br>
+                                    En el caso que el titular sea ciudadano Venezolano, registrar fecha 
+                                    de vencimiento del PPT en el campo observaciones.<br>
+                                    DATOS DEL ABONADO: Se registra la información personal del
+                                    cliente. En caso que el titular tenga servicios activos con la
+                                    compañía los datos se cargarán automáticamente.<br>
+                                    Tener en cuenta tipo de cliente (natural o jurídico) y tipo de
+                                    documento (CC, CE, Nit, PPT).<br>
+                                    En el caso de los clientes jurídicos registramos el número de
+                                    Nit sin el digito de verificación.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- /.container-fluid -->
+
+    </div>
+    <!-- End of Main Content -->
+
+{% endblock %} {% block javascript %} {% endblock %}

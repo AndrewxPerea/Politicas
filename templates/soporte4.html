@@ -1,0 +1,188 @@
+{% extends 'layout/app.html' %} {% load static %} {% block body %} {% include "elements/dropdownsoporte.html" %}
+                <div class="container-fluid">
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800 ">Tiempos de respuesta segun la solicitud</h1>
+                    <div class="row">
+
+                        <div class="col-lg-6">
+
+                            <!-- Circle Buttons -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">SOPORTE TÉCNICO:</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Clasificación</th>
+                                                    <th> Tiempo Maximo de respuesta </th>
+                                                   
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Respuesta a PQR</td>
+                                                   <td>15 dias habiles</td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>Solicitud copia de factura electronica</td>
+                                                    <td>24 Horas</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Solicitud copia  de contrato u otro tipo de documentos</td>
+                                                    <td>10 dias habiles</td>
+                                                </tr>
+                                                
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+
+                            <!-- Circle Buttons -->
+                            <div class="card shadow mb-4">
+                                
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Visita tecnica</th>
+                                                    <th> Tiempo Maximo de respuesta </th>
+                                                   
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Cambio de plan</td>
+                                                   <td>15 dias habiles</td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>Conexion defectuosa y otros</td>
+                                                    <td>24 Horas</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sin servicio zona rural / Cable caido</td>
+                                                    <td>10 dias habiles</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sin servicio zona urbana</td>
+                                                    <td>10 dias habiles</td>
+                                                </tr>
+                                                
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+
+                            <!-- Circle Buttons -->
+                            <div class="card shadow mb-4">
+                                
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Soporte Tecnico Remoto</th>
+                                                    <th> Tiempo Maximo de respuesta </th>
+                                                   
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Soporte Tecnico Remoto</td>
+                                                   <td>de 3 a 5 dias habiles</td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>Cambio de plan de manera remota</td>
+                                                    <td>24 horas</td>
+                                                </tr> 
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+
+                            <!-- Circle Buttons -->
+                            <div class="card shadow mb-4">
+                                
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Instalacion</th>
+                                                    <th> Tiempo Maximo de respuesta </th>
+                                                   
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>intalacion del servicio</td>
+                                                   <td>8 Dias habilies siguientes  a la suscripcion del servicio</td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>Instalacion punto adicional</td>
+                                                    <td>De 5 a 8 dias habiles</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Traslado o reubicacion de acometida</td>
+                                                    <td>De 3 a 5 dias habiles</td>
+                                                </tr>
+                                                <tr>
+                                                    <td> Reconexión remota</td>
+                                                    <td>24 horas siguientes al momento en el que el usuario pague los saldos pendiente</td>
+                                                </tr>
+                                                
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+
+                            <!-- Circle Buttons -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">IMPORTANTE</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                    los tiempos de instalacion podran aplicarse cuando TUCABLE SAS requiera realizar extencion de redes troncales para ampliar la cobertura hasta el hogar. En todo caso no excederá de 15 dias habiles
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+
+
+                   
+                   
+
+                </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        {% endblock %} {% block javascript %} {% endblock %}

@@ -1,0 +1,121 @@
+{% extends 'layout/app.html' %} {% load static %} {% block body %}
+{% include "elements/dropdowncontratos.html" %}
+ <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800 ">Registro de Contratos</h1>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3 text-center">
+                                    <h5 class="m-0 font-weight-bold text-primary">REGISTRO DE CONTRATO EN SISTEMA</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        • Seleccione módulo de abonados.<br>
+                                        • Consultar número de documento del titular. Esto nos
+                                        permite verificar si el solicitante ha tenido o tiene servicios
+                                        activos con la compañía.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-6">
+
+                            <!-- Circle Buttons -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Validacion en sistema</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        Si cuenta con un servicio activo, la facturación debe estar
+                                        al día.<br>
+                                        Si tiene un servicio en estatus suspendido o cortado, el
+                                        saldo debe ser cero y debe haber entregado el cable
+                                        módem.<br>
+                                        No se crea nuevo abonado, sino que se reutiliza el
+                                        existente. Para esto se debe:<br>
+                                        Actualizar todos los datos (teléfonos, correo electrónico, 
+                                        dirección)<br>
+                                        Solicitar cambio de número de contrato con Karen
+                                        Botero.<br>
+                                        Hacer cambio de plan en el caso que aplique.<br>
+                                        Cargar deuda de instalación y aplicar pago.<br>
+                                        Subir digitalizaciones sin eliminar las existentes.<br>
+                                        Generar orden de instalación del servicio.<br>
+                                        Si tiene saldo pendiente por cancelar o no ha entregado
+                                        el módem y su cargador, nos comunicamos con el cliente
+                                        para hacer un acuerdo de pago, con el fin de recuperar
+                                        tanto la cartera vencida, como el módem y el cliente; sin
+                                        embargo, es importante tener en cuenta que si la persona
+                                        solicita el reintegro de su dinero, debemos darle la
+                                        información correspondiente a los desistimientos y hacer
+                                        la devolución del dinero, ya que desde el punto de vista
+                                        legal son contratos diferentes y solo podemos abonar el
+                                        valor que pagó por la instalación si hay un acuerdo entre
+                                        las partes.
+                                       
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+
+                            <!-- Circle Buttons -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Si la recuperación es efectiva reutilizamos el abonado.</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        •Procesamos el contrato y el recibo de caja. Ruta: <br>
+                                        Módulo Administración:<br>
+                                        *Contratos y recibos.<br>
+                                        *Procesar Contratos<br>
+                                        Seleccionar el vendedor.<br>
+                                        *Buscar el contrato por número, en la casilla “BUSCAR”<br>
+                                        **Seleccionar y dar clic en recibido.<br>
+                                        Se hace el mismo procedimiento con el recibo en Procesar 
+                                        recibos”.<br>
+                                        SOLO EN EL CASO QUE EL CONTRATO NO ESTÉ ASIGNADO
+                                        O QUE DEBAMOS UTILIZAR UN CONTRATO DE OFICINA, LO
+                                        ASIGNAMOS ASÍ:<br><br>
+                                        *Módulo Administración.<br>
+                                        *Contratos y recibos.<br>
+                                        *Asignar Contratos<br>
+                                        *Seleccionar el vendedor.<br><br>
+                                        A partir del 23 de agosto del 2023 no asignamos serie al momento 
+                                        de asignar los contratos.<br>
+                                        *Indique en el campo Contrato desde, el número del contrato a 
+                                        asignar y en Contrato hasta, el número con el cual finalizará.
+                                        *Click en validar.<br>
+                                        *Registrar.<br>
+                                        Luego procesamos el contrato.<br>
+                                        Una vez hecho este proceso, registramos al usuario por módulo 
+                                        abonados. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                   
+                   
+
+                </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+ 
+{% endblock %} {% block javascript %} {% endblock %}

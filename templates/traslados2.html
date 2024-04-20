@@ -1,0 +1,133 @@
+ {% extends 'layout/app.html' %} {% load static %} {% block body %} {% include "elements/dropdowntraslados.html" %}
+<div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800 ">TRASLADOS</h1>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3 text-center">
+                                    <h5 class="m-0 font-weight-bold text-primary">TTRASLADO ENTRE AGENCIAS:</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        Requisitos:<br>
+                                        Tramitar presencialmente en oficina. Presentar solicitud
+                                        directa por parte del titular.<br>
+                                        NO HACEMOS FIRMAR NUEVO CONTRATO A MENOS QUE 
+                                        SOLICITE CAMBIO DE PLAN.<br>
+                                        Si el traslado se da entre oficinas propias de la marca,<br>
+                                        podemos realizar la gestión completa en línea, es decir:<br>
+                                        ➢ Validamos cobertura.<br>
+                                        ➢ Hacemos el cobro de la factura, prorrateo en caso de que aplique y
+                                        valor del traslado.<br>
+                                        ➢ Verificamos si aplica cambio de plan.<br>
+                                        ➢ Solicitamos la factura de agua, gas o energía de la nueva vivienda.<br>
+                                        ➢ No es necesario hacer entrega del módem, se informa que debe
+                                        llevarlo con él a la nueva vivienda (Si es la misma tecnología).<br>
+                                        ➢ Hacemos la baja del servicio en la franquicia a la que pertenece y
+                                        no se devuelve la ONU en sistema, ya que este proceso lo harán los
+                                        ingenieros de soporte. Es importante dejar registro de la franquicia a
+                                        la que se traslada.<br>
+                                        ➢ Asignamos y procesamos el número del contrato físico con el
+                                        prefijo AN, con el fin de liberar el contrato y poder asignarlo en la
+                                        nueva franquicia. (En caso que el contrato tenga el prefijo Z, no sera
+                                        necesario este paso)<br>
+                                        ➢ Solicitamos a través del correo auditoria@tucable.net el cambio de
+                                        número de contrato.<br>
+                                        ➢ Registramos al usuario en la nueva franquicia, asignando el mismo
+                                        número de contrato sin prefijo. En el campo solicitud de instalación,
+                                        seleccionamos, tipo de servicio “internet” y en descripción
+                                        “instalación por traslado entre agencias $30,000” y la
+                                        adicionamos.<br>
+                                        ➢ Descargamos los archivos adjuntos (contrato, cédula, habeas data,
+                                        registro fotográfico, recibo de caja) y los adjuntamos al nuevo
+                                        abonado, sin eliminarlos del anterior abonado, adjuntamos el nuevo
+                                        recibo público.<br>
+                                        ➢ Una vez creado el usuario en la nueva franquicia, aplicamos el pago
+                                        del valor del traslado en sistema.<br>
+                                        Si el traslado se da entre oficinas de la marca y oficinas aliadas,
+                                        podemos realizar la gestión en la oficina de la zona a la que
+                                        pertenece o en la oficina de la zona a la que se traslada, siendo esta
+                                        última opción la más cómoda para el usuario.
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-6">
+
+                            <!-- Circle Buttons -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Si se acerca a la oficina de la zona a la que pertenece:</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        ➢ Validamos cobertura.<br>
+                                        ➢ Hacemos el cobro de la factura, prorrateo en caso
+                                        de que aplique.<br>
+                                        ➢ Verificamos si aplica cambio de plan.<br>
+                                        ➢ Solicitamos la entrega de módem junto con su cargador.<br>
+                                        ➢ Realizamos la baja del servicio, dejando registro 
+                                        correspondiente a bajas y entregamos paz y salvo. Es 
+                                        importante dejar registro de la franquicia a la que se traslada. <br>
+                                        ➢ Asignamos y procesamos el número del contrato físico con el 
+                                        prefijo AN. <br>
+                                        ➢ Enviamos un correo a auditoria@tucable.net en el
+                                        cual se debe solicitar el cambio del número de contrato y
+                                        enviamos los archivos adjuntos a excepción del recibo
+                                        público para que la nueva franquicia los adjunte.<br>
+                                        ➢ Remitimos al usuario a la oficina de la zona a la cual se
+                                        traslada y le informamos que el valor del traslado lo cancela
+                                        en dicha oficina.
+                                        
+                                       
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+
+                            <!-- Circle Buttons -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Si se acerca a la oficina de la zona a la que se traslada:
+                                        :</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        ➢ Se valida cobertura.<br>
+                                        ➢ Genera el cobro de la factura o prorrateo en caso de que
+                                        aplique y valor del traslado.<br>
+                                        ➢ Verificar si aplica cambio de plan.<br>
+                                        ➢ Solicitar la entrega del módem junto con su cargador, para ser 
+                                        enviado a la oficina principal o a la franquicia aliada según sea 
+                                        el caso.<br>
+                                        ➢ Enviar un correo a auditoria@tucable.net, en el
+                                        cual soliciten la baja del servicio (Es importante dejar registro
+                                        de la franquicia a la que se traslada.), la liberación del número
+                                        del contrato y los archivos adjuntos.<br>
+                                        ➢ El funcionario de la oficina aliada procederá con el registro del
+                                        abonado en su franquicia, asignando el mismo número de
+                                        contrato. En el campo solicitud de instalación, seleccionamos,
+                                        tipo de servicio “internet” y en descripción “instalación
+                                        por traslado entre agencias $30,000” y la adicionamos.<br>
+                                        ➢ Aplicamos el pago del traslado en el nuevo abonado creado
+                                        en la nueva franquicia
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                   
+                   
+
+                </div>
+                     {% endblock %} {% block javascript %} {% endblock %}
