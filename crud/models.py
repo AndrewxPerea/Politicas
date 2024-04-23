@@ -1,7 +1,15 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-
+from django.contrib.auth.models import Group
 from django.db import models
+from django.contrib.auth.models import User
+
+class Roles(models.Model):
+    cargo = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    
+    
+    
 
 
 # Create your models here.

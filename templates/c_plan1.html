@@ -1,4 +1,5 @@
-{% extends 'layout/app.html' %} {% load static %} {% block body %} {% include "elements/dropdowncplan.html" %}
+{% extends 'layout/app.html' %} {% load static %} 
+{% block body %} {% include "elements/dropdowncplan.html" %}
 <div class="container-fluid">
 
     <!-- Page Heading -->
@@ -16,15 +17,15 @@
                     <h6 class="m-0 font-weight-bold text-primary">INFORMACIÓN DADA POR EL GRUPO ADMINISTRATIVO EL 07 DE JUNIO DE 2023</h6>
                 </div>
                 <div class="card-body">
-                    <p>
-                        Puntos para aclarar con relación a los cambios de plan, empaquetamientos y desempaquetamientos. <br>
-                        En el momento en que recibimos una solicitud para cambio de plan, podemos ofrecer 2 opciones al titular del servicio, sin olvidar que en 
-                        todos los casos se requiere firma de nuevo contrato:<br>
-                        OPCIÓN # 1: Cambio de plan inmediato.<br>
-                        En este caso, informamos que el cambio de plan será ejecutado durante las 24 horas siguientes, aclarar que se genera un ajuste en la 
-                        factura. <br>
-                        Este ajuste se hará de la siguiente manera: Liquidamos del 1 del mes hasta el día anterior a la solicitud con la tarifa del plan actual y del 
-                        día de solicitud hasta el último día del mes, con la tarifa del nuevo plan, dependiendo del tipo de cambio solicitamos N.C o N.D.
+                    
+                        <p> Puntos para aclarar con relación a los cambios de plan, empaquetamiento y         desempaquetamientos. <br>
+                            En el momento en que recibimos una solicitud para cambio de plan, podemos ofrecer 2 opciones al titular del servicio, sin olvidar que en 
+                            todos los casos se requiere firma de nuevo contrato:<br>
+                            OPCIÓN # 1: Cambio de plan inmediato.<br>
+                            En este caso, informamos que el cambio de plan será ejecutado durante las 24 horas siguientes, aclarar que se genera un ajuste en la 
+                            factura. <br>
+                            Este ajuste se hará de la siguiente manera: Liquidamos del 1 del mes hasta el día anterior a la solicitud con la tarifa del plan actual y del 
+                            día de solicitud hasta el último día del mes, con la tarifa del nuevo plan, dependiendo del tipo de cambio solicitamos N.C o N.D.
                         <table class="table">
                             <thead>
                                 <tr class="table-primary">
@@ -49,13 +50,13 @@
                         Si la factura del mes actual no se ha emitido, la generamos; acto seguido procedemos a realizar el cambio de plan en sistema y lo 
                         registramos en SOPORTE TÉCNICO INTERNO, pestaña cambios de plan, aclarando en las observaciones si el cambio es inmediato o si 
                         se debe ejecutar a partir del primer día del siguiente mes
-                    </p>
+                </p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-     {% endblock %} {% block javascript %} {% endblock %}
+{% endblock %} {% block javascript %} {% endblock %}
                     
 
 

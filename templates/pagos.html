@@ -1,52 +1,51 @@
-{% extends 'layout/app.html' %} {% load static %} {% block body %} {% include "elements/dropdownpagos.html" %}
+{% extends 'layout/app.html' %} {% load static %} {% block body %}
+ {% include "elements/dropdownpagos.html" %}
 <div class="container-fluid">
+  <!-- Page Heading -->
+  <h1 class="h3 mb-4 text-gray-800">Pagos TuCable</h1>
 
-                    <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800 ">Pagos TuCable</h1>
-
-                   
-
-                    <div class="row ">
-
-                        <div class="col-lg-12 ">
-
-                            <!-- Circle Buttons -->
-                            <div class="card shadow mb-4">
-                                
-                                <div class="card-body">
-                                    <p>
-                                        Los usuarios tiene a su disposición diferentes canales para realizar el pago de su obligación y así evitar cortes en su 
-                                        servicio:<br>
-                                        • Oficinas de servicio.<br>
-                                        • Pagos por transferencia a cuenta Scotiabank Colpatria<br>
-                                        • Pagos por PSE a través de MiPagoAmigo.<br>
-                                        Pueden obtener información de cómo acceder a estos en los diferentes canales. Es importante aclarar al usuario que
-                                        en el caso de los dos últimos el pago se verá reflejado al siguiente día hábil.
-                                        PROCEDIMIENTO PARA RECIBIR PAGOS EN EFECTIVO: Al momento de recibir un pago en oficina (efectivo) 
-                                        debemos seguir los siguientes pasos:<br>
-                                        ✓Consultar al titular del servicio. ✓Validar la titularidad e informar el valor a pagar. ✓Recibir el dinero, revisando que no nos sea entregado un billete falso. ✓Aplicar el pago. ✓Hacer entrega de la tirilla POS y las vueltas si las hay.
-                                        ✓No se debe negar el pago de la factura si la persona lo hace con monedas, debemos hacer el conteo y evitar que el
-                                        usuario se sienta incomodo.<br>
-                                        Con esto garantizamos una correcta aplicación de los pagos y evitamos descuadres de caja.<br>
-                                        En caso de aplicar un pago de manera errada se procederá con la anulación del pago, para esto debemos
-                                        comunicarnos con Karen Botero quien autorizará dicha anulación.<br>
-                                        Cuando recibamos pagos de la Franquicia PEREIRA debemos validar: El tipo de servicio que tiene contratado el
-                                        usuario, si es solo Televisión por suscripción o Televisión + internet. Esto es muy importante ya que al generar los
-                                        cortes por facturación se suspende el servicio de internet, quedando activa la televisión y la facturación continuara
-                                        generándose por el valor de la televisión y no por el valor completo del plan, de ahí que debamos revisar que el
-                                        comando haya sido exitoso y reportarlo en el archivo de cortes y directamente a Luisa Botero.
-
-                                        
-                                    </p>
-                                    <img src="img/pago1.png">
-                                </div>
-                            </div>
-                        </div>
-                       
-                    
-                    </div>
-                    
-
-
-                </div>
-                  {% endblock %} {% block javascript %} {% endblock %}
+  <div class="row">
+    <div class="col-lg-12">
+      <!-- Circle Buttons -->
+      <div class="card shadow mb-4">
+        <div class="card-body">
+          <p>
+            Los usuarios tiene a su disposición diferentes canales para realizar
+            el pago de su obligación y así evitar cortes en su servicio:<br />
+            • Oficinas de servicio.<br />
+            • Pagos por transferencia a cuenta Scotiabank Colpatria<br />
+            • Pagos por PSE a través de MiPagoAmigo.<br />
+            Pueden obtener información de cómo acceder a estos en los diferentes
+            canales. Es importante aclarar al usuario que en el caso de los dos
+            últimos el pago se verá reflejado al siguiente día hábil.
+            PROCEDIMIENTO PARA RECIBIR PAGOS EN EFECTIVO: Al momento de recibir
+            un pago en oficina (efectivo) debemos seguir los siguientes
+            pasos:<br />
+            ✓Consultar al titular del servicio. ✓Validar la titularidad e
+            informar el valor a pagar. ✓Recibir el dinero, revisando que no nos
+            sea entregado un billete falso. ✓Aplicar el pago. ✓Hacer entrega de
+            la tirilla POS y las vueltas si las hay. ✓No se debe negar el pago
+            de la factura si la persona lo hace con monedas, debemos hacer el
+            conteo y evitar que el usuario se sienta incomodo.<br />
+            Con esto garantizamos una correcta aplicación de los pagos y
+            evitamos descuadres de caja.<br />
+            En caso de aplicar un pago de manera errada se procederá con la
+            anulación del pago, para esto debemos comunicarnos con Karen Botero
+            quien autorizará dicha anulación.<br />
+            Cuando recibamos pagos de la Franquicia PEREIRA debemos validar: El
+            tipo de servicio que tiene contratado el usuario, si es solo
+            Televisión por suscripción o Televisión + internet. Esto es muy
+            importante ya que al generar los cortes por facturación se suspende
+            el servicio de internet, quedando activa la televisión y la
+            facturación continuara generándose por el valor de la televisión y
+            no por el valor completo del plan, de ahí que debamos revisar que el
+            comando haya sido exitoso y reportarlo en el archivo de cortes y
+            directamente a Luisa Botero.
+          </p>
+          <img src="{% static 'assets/img/pago1.png'}" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} {% block javascript %} {% endblock %}

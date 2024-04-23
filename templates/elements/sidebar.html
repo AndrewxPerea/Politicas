@@ -22,7 +22,7 @@
                 Ajax Crud
             </a>
             ------>
-            <div class="sb-sidenav-menu-heading">Índice</div>
+            <div class="sb-sidenav-menu-heading-">Índice</div>
             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                 Politicas
@@ -56,6 +56,9 @@
                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
                     <a class="nav-link collapsed" href="{% url 'upload_csv' %}">
                         CSV Upload
+                    </a>
+                    <a class="nav-link collapsed" href="{% url 'ajax' %}">
+                        ajax
                     </a>
                     <a class="nav-link collapsed" href="{% url 'changePassword' %}">
                         Change Password

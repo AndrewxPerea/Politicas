@@ -12,6 +12,7 @@ from django.core.exceptions import ValidationError
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
+
 # Info Ventas
 @login_required
 def ventas(request):
@@ -180,7 +181,6 @@ def suser(request):
 
 
 
-
 # Create your views here.
 
 
@@ -341,6 +341,7 @@ def register(request):
                 email=form.cleaned_data['email'],
                 first_name=form.cleaned_data['first_name'],
                 last_name=form.cleaned_data['last_name'],
+                cargo=form.cleaned_data['cargo'],
             )
             try:
                 users.full_clean()

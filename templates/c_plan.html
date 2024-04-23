@@ -1,68 +1,73 @@
-{% extends 'layout/app.html' %} {% load static %} {% block body %} {% include "elements/dropdowncplan.html" %}
- <div class="container-fluid">
-                    <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800 ">Cambio de Plan</h1>
+{% extends 'layout/app.html' %} {% load static %} {% block body %}
+ {% include "elements/dropdowncplan.html" %}
+<div class="container-fluid">
+  <!-- Page Heading -->
+  <h1 class="h3 mb-4 text-gray-800">Cambio de Plan</h1>
 
-                   
-
-                    <div class="row">
-
-                        <div class="col-lg-12">
-
-                            <!-- Circle Buttons -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Requisitos</h6>
-                                </div>
-                                <div class="card-body">
-                                    <p>
-                                        ✓ Tramitar a través de cualquier canal de servicio.<br>
-                                        ✓ Si lo solicita a través de las líneas de atención al Cliente (3126342004-3156948966), se debe asignar la solicitud al asesor de
-                                        turno quien realizará el trámitede firma del contrato.<br>
-                                        ✓ En este caso se debe tener en cuenta que NO genera comisión al asesor comercial, pero sí cuenta para la meta.
-                                        ✓ Presentar solicitud directa por parte del titular.<br>
-                                        ✓ Si la solicitud se hace a través de oficina debe presentar cédula, si es por otro canal se debe validar titularidad.
-                                        ✓ Estar al día en pagos, tener en cuenta la vigencia de la factura. Si lo solicita a partir del 25 del mes, y tiene saldo pendiente, exigimos 
-                                        el pago de la factura por estar en la fecha limite de pago.<br>
-                                        ✓ Informar al titular de los paquetes disponibles y tarifas mensuales.<br>
-                                        ✓ La solicitud se puede realizar en cualquier día de mes.<br>
-                                        ✓ Firma nuevo contrato.<br>
-                                        ✓ Si el cambio se solicita antes de la fecha de emisión de la factura, antes de cambiar el plan cargamos la factura y procedemos a
-                                        hacer los ajustes pertinentes.<br>
-                                        ✓ Hacer seguimiento para verificar que el ajuste se haya realizado.<br>
-                                        ✓ Realizar el cambio de plan en sistema.<br>
-                                        ✓ Una vez se haga el cambio de plan, lo copiamos en punto de referencia para que la información quede actualizada.
-                                        ✓ Registrar en la planilla SOPORTE TÉCNICO INTERNO, pestaña cambios de plan.<br><br>
-                                        *Tener en cuenta que este último paso aplica para oficinas propias de la marca.<br>
-                                        **Las agencias de Samaria, Villa Santana, Altagracia y Parque Industrial, deben hacer su solicitud a través del correo electrónico
-                                        gestion.comunicacion@tucable.net<br>
-                                        En asunto: CAMBIO DE PLAN y anexar la información requerida
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-
-                            <!-- Circle Buttons -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Gestion en sistema</h6>
-                                </div>
-                                <div class="card-body">
-                                    <p>
-                                        Aplica para subir o bajar el paquete de megas. <br> <br>
-                                        • Recuerde actualizar datos del titular.<br>
-                                        • En la pestaña de abonados clic en Actualizar Servicios.<br>
-                                        • En suscripción mensual haga Clic en eliminar el paquete actual.<br>
-                                        • Seleccione el nuevo plan y dar Clic en agregar.<br>
-                                        En DATOS DE LA SOLICITUD registrar todos los campos, incluido el campo de observaciones y actualizar.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-
-
-                </div>
-                     {% endblock %} {% block javascript %} {% endblock %}
+  <div class="row">
+    <div class="col-lg-12">
+      <!-- Circle Buttons -->
+      <div class="card shadow mb-4">
+        <div class="card-header py-3">
+          <h6 class="m-0 font-weight-bold text-primary">Requisitos</h6>
+        </div>
+        <div class="card-body">
+          <p>
+            ✓ Tramitar a través de cualquier canal de servicio.<br />
+            ✓ Si lo solicita a través de las líneas de atención al Cliente
+            (3126342004-3156948966), se debe asignar la solicitud al asesor de
+            turno quien realizará el trámitede firma del contrato.<br />
+            ✓ En este caso se debe tener en cuenta que NO genera comisión al
+            asesor comercial, pero sí cuenta para la meta. ✓ Presentar solicitud
+            directa por parte del titular.<br />
+            ✓ Si la solicitud se hace a través de oficina debe presentar cédula,
+            si es por otro canal se debe validar titularidad. ✓ Estar al día en
+            pagos, tener en cuenta la vigencia de la factura. Si lo solicita a
+            partir del 25 del mes, y tiene saldo pendiente, exigimos el pago de
+            la factura por estar en la fecha limite de pago.<br />
+            ✓ Informar al titular de los paquetes disponibles y tarifas
+            mensuales.<br />
+            ✓ La solicitud se puede realizar en cualquier día de mes.<br />
+            ✓ Firma nuevo contrato.<br />
+            ✓ Si el cambio se solicita antes de la fecha de emisión de la
+            factura, antes de cambiar el plan cargamos la factura y procedemos a
+            hacer los ajustes pertinentes.<br />
+            ✓ Hacer seguimiento para verificar que el ajuste se haya
+            realizado.<br />
+            ✓ Realizar el cambio de plan en sistema.<br />
+            ✓ Una vez se haga el cambio de plan, lo copiamos en punto de
+            referencia para que la información quede actualizada. ✓ Registrar en
+            la planilla SOPORTE TÉCNICO INTERNO, pestaña cambios de plan.<br /><br />
+            *Tener en cuenta que este último paso aplica para oficinas propias
+            de la marca.<br />
+            **Las agencias de Samaria, Villa Santana, Altagracia y Parque
+            Industrial, deben hacer su solicitud a través del correo electrónico
+            gestion.comunicacion@tucable.net<br />
+            En asunto: CAMBIO DE PLAN y anexar la información requerida
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <!-- Circle Buttons -->
+      <div class="card shadow mb-4">
+        <div class="card-header py-3">
+          <h6 class="m-0 font-weight-bold text-primary">Gestion en sistema</h6>
+        </div>
+        <div class="card-body">
+          <p>
+            Aplica para subir o bajar el paquete de megas. <br />
+            <br />
+            • Recuerde actualizar datos del titular.<br />
+            • En la pestaña de abonados clic en Actualizar Servicios.<br />
+            • En suscripción mensual haga Clic en eliminar el paquete actual.<br />
+            • Seleccione el nuevo plan y dar Clic en agregar.<br />
+            En DATOS DE LA SOLICITUD registrar todos los campos, incluido el
+            campo de observaciones y actualizar.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} {% block javascript %} {% endblock %}
