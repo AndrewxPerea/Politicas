@@ -85,4 +85,12 @@ urlpatterns = [
     #Solicitud usuarios
     path('suser/', views.suser , name = 'suser'),
     
+    
+    #soporte
+    
+    
+    
+    
+    
+    
 ]

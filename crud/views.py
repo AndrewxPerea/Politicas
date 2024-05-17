@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Member, Document, Ajax, CsvUpload
 import datetime
+from datetime import datetime
 from django.contrib import messages
 from django.core.files.storage import FileSystemStorage
 from django.http import JsonResponse
@@ -10,6 +11,7 @@ from django.views.decorators.csrf import csrf_protect
 from django.http import HttpResponseRedirect
 from django.core.exceptions import ValidationError
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+
 
 
 
@@ -456,3 +458,6 @@ def deleteFiles(request, id):
     file.delete()
     messages.warning(request, 'File was deleted successfully!')
     return redirect('/fileupload')
+
+
+

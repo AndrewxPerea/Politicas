@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-from django.contrib.auth.models import Group
 from django.db import models
 from django.contrib.auth.models import User
+from django import forms
 
-class Roles(models.Model):
-    cargo = models.ForeignKey(User, on_delete=models.CASCADE)
 
     
     
@@ -41,3 +39,7 @@ class CsvUpload(models.Model):
     description = models.CharField(max_length=255, blank=True)
     end_date = models.DateTimeField()
     notes = models.CharField(max_length=255, blank=True)
+
+
+    
+
