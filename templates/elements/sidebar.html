@@ -4,11 +4,12 @@
     
         <div class="nav">
             <div class="sb-sidenav-menu-heading">Menu</div>
-            <!------
+            
             <a class="nav-link" href="{% url 'home' %}">
                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                menu
+                Inicio
             </a>
+            <!------
             <a class="nav-link" href="{% url 'list' %}">
                 <div class="sb-nav-link-icon"><i class="fas fa-fw fa-database"></i></div>
                 CRUD App
@@ -54,12 +55,14 @@
             </a>
             <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                  <!------
                     <a class="nav-link collapsed" href="{% url 'upload_csv' %}">
                         CSV Upload
                     </a>
                     <a class="nav-link collapsed" href="{% url 'ajax' %}">
                         ajax
                     </a>
+                    ------>
                     <a class="nav-link collapsed" href="{% url 'changePassword' %}">
                         Change Password
                     </a>
