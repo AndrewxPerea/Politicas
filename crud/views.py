@@ -16,43 +16,43 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
 # Info Ventas
-@login_required
+#@login_required
 def ventas(request):
     return render(request, 'ventas.html')
 
 # puntos adicionales
 
 
-@login_required
+#@login_required
 def puntos_adicionales(request):
     return render(request, 'puntosadicionales.html')
 
 # Registro de Contratos
 
 
-@login_required
+#@login_required
 def r_contratos(request):
     return render(request, 'rcontratos.html')
 
 
-@login_required
+#@login_required
 def r_contratosuno(request):
     return render(request, 'rcontratos1.html')
 
 
-@login_required
+#@login_required
 def r_contratosdos(request):
     return render(request, 'rcontratos2.html')
 
 
-@login_required
+#@login_required
 def r_contratostres(request):
     return render(request, 'rcontratos3.html')
 
 # Soporte
 
 
-@login_required
+#@login_required
 def clave(request):
     return render(request, 'clave.html')
 
@@ -60,77 +60,77 @@ def soporte(request):
     return render(request, 'soporte.html')
 
 
-@login_required
+#@login_required
 def soporteuno(request):
     return render(request, 'soporte1.html')
 
 
-@login_required
+#@login_required
 def soportedos(request):
     return render(request, 'soporte2.html')
 
 
-@login_required
+#@login_required
 def soportetres(request):
     return render(request, 'soporte3.html')
 
 
-@login_required
+#@login_required
 def soportecuatro(request):
     return render(request, 'soporte4.html')
 
 # PQR
 
 
-@login_required
+#@login_required
 def pqr(request):
     return render(request, 'pqr.html')
 
 
-@login_required
+#@login_required
 def pqruno(request):
     return render(request, 'pqr1.html')
 
 
-@login_required
+#@login_required
 def pqrdos(request):
     return render(request, 'pqr2.html')
 
 
-@login_required
+#@login_required
 def ventas_uno(request):
     return render(request, 'ventas1.html')
 
 
-@login_required
+#@login_required
 def ventas_dos(request):
     return render(request, 'ventas2.html')
 
 
-@login_required
+#@login_required
 def ventas_tres(request):
     return render(request, 'ventas3.html')
 
 #Traslados
-@login_required
+#@login_required
 def traslados(request):
     return render(request, 'traslados.html')
 
-@login_required
+#@login_required
 def trasladosuno(request):
     return render(request, 'traslados1.html')
 
-@login_required
+#@login_required
 def trasladosdos(request):
     return render(request, 'traslados2.html')
 
-@login_required
+#@login_required
 def trasladostres(request):
     return render(request, 'traslados3.html')
 
 #Cambio de plan
 
-@login_required
+#@login_required
 def cambioplan(request):
     return render(request, 'c_plan.html')
 
@@ -186,7 +186,7 @@ def suser(request):
 # Create your views here.
 
 
-@login_required
+
 def index(request):
     return render(request, 'index.html')
 
