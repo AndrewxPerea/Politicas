@@ -1,146 +1,188 @@
 {% extends 'layout/app.html' %} {% load static %} {% block body %} {% include "elements/dropdownventas.html" %}
-<div class="container-fluid">
-  <h1 class="h3 mb-4 text-gray-800">Política de Ventas</h1>
-  <div class="row">
-    <div
-      id="carouselExampleAutoplaying"
-      class="carousel slide carousel-dark slide"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="card shadow mb-4">
-              <div class="card-header py-3 text-center">
-                <h5 class="m-0 font-weight-bold text-primary">TEN EN CUENTA ESTA INFORMACIÓN LA CUAL
-                                              ES DE
-                                              SUMA IMPORTANCIA PARA NUESTROS USUARIOS</h5>
-              </div>
-              <div class="card-body">
-                <p>
-                 <p>
-                                              La primera factura corresponde a los días de prorrateo a
-                                              partir de la instalación del servicio hasta la fecha de corte que
-                                              es el último día de cada mes. Este valor debe ser cancelado
-                                              a más tardar el último día del mes para evitar cortes en el
-                                              servicio, el asesor comercial es el encargado de informar al
-                                              titular el valor de dicho prorrateo.
-                                              La mensualidad depende del plan contratado. <br>
-                                              Instalación en un plazo máximo de 08 días hábiles. <br>
-                                              La factura se genera el 14 de cada mes.<br>
-                                              Fecha límite de pago es el 25 de cada mes.<br>
-                                              La fecha de corte es el último día de cada mes. <br>
-                                              Los usuarios pagan mes en curso
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-        <div class="carousel-item ">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="card shadow mb-4">
-                <div class="card-header py-3 text-center">
-                  <h5 class="m-0 font-weight-bold text-primary">
-                   Informar que tiene a su disposición
-                                        diferentes métodos de
-                                        pago:
-                  </h5>
-                </div>
-                <div class="card-body">
-                 <p>
-                                        • Oficinas: Pagos en efectivo.<br>
-                                        • Transferencias: Cuenta Corriente en Scotiabank Colpatria. Se hace efectivo al
-                                        siguiente día hábil.<br>
-                                        • PSE: Por la aplicación MiPagoAmigo, se hace efectivo al siguiente día hábil,
-                                        por la página www.tucable.net o escaneado el código QR en oficina, también
-                                        ingresando al
-                                        siguiente <a href="https://app.grupo-bit.com/intranet/#/payment/dHVfY2FibGU"
-                                            target="_blank">
-                                            https://app.grupo-bit.com/intranet/#/payment/dHVfY2FibGU</a>
-                                        <br><br>
-                                        Las tarifas tienen vigencia hasta el 31 de diciembre
-                                        de cada año.<br>
-                                        El hecho de no recibir la factura NO EXONERA al cliente del
-                                        pago de su obligación.<br>
-                                        Es obligatorio proporcionar un correo electrónico para el
-                                        envío de la factura electrónica.<br>
-                                        Los retiros se pueden solicitar en cualquier día del mes, pero
-                                        se recomienda que se realicen entre el entre el 27 al 30 del
-                                        mes, con el fin de que pueda disfrutar del servicio todo el mes. (Deben ser
-                                        solicitados por el titular del
-                                        servicio o un tercero debidamente autorizado, quedar al
-                                        día y entregar el módem y su cargador en la oficina más
-                                        cercana)
-                                    </p>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
+<style>
+  .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
 
-        <div class="carousel-item ">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="card shadow mb-4">
-                <div class="card-header py-3 text-center">
-                  <h5 class="m-0 font-weight-bold text-primary">
-                    Requisitos persona jurídica:
-                  </h5>
-                </div>
-                <div class="card-body">
-                  <p>
-                    TuCable S.A.S instala hasta dos puntos de televisión, por
-                    lo que si al momento de la instalación solicitó instalar un solo
-                    punto y posteriormente solicita le instalemos el segundo,
-                    debe pagar el valor de punto adicional después de
-                    instalación ($30,000), se genera la orden de servicio de toma
-                    adicional y se le informa al titular que la orden será atendida
-                    en un tiempo máximo de 8 días hábiles.<br>
-                    Cambios de clave gratuitos, puede solicitarlos a través de
-                    línea de WhatsApp, donde le informarán el procedimiento a
-                    seguir para dicha solicitud.<br>
-                    Anexar al contrato un volante indicando los números a los que
-                    se puede comunicar para solicitar soporte, solicitudes de
-                    servicio o PQRS (Peticiones, quejas, reclamos y solicitudes).<br><br>
-                    Recuerde nuestros canales de atención: 
-                    <ul>
-                    <li>Oficinas físicas.</li>
-                    <li>Página web:  <a href="https://www.tucable.net/registro-de-pqr" target="_blank" > www.tucable.net/registro-de-pqr/, </a></li>
-                   <li> Correo electrónico: quejasyreclamos@tucable.net</li>
-                    <li>Línea Comercial: 3205582644</li>
-                    <li>Líneas de Whatsapp: 3156948966 - 3126342004</li>
-                    </ul>
-                  </p>
-                </div>
-              </div>
-            </div>
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+  .tabcontent {
+    animation: fadeEffect 1s;
+    /* Fading effect takes 1 second */
+  }
+
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'uno')" id="defaultOpen">Ten Encuenta</button>
+  <button class="tablinks" onclick="openCity(event, 'dos')">Requisitos</button>
+  
+</div>
+
+<div id="uno" class="tabcontent">
+  <div class="container-fluid">
+    <h1 class="h3 mb-4 text-gray-800">Política de Ventas</h1>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card shadow mb-4">
+          <div class="card-header py-3 text-center">
+            <h5 class="m-0 font-weight-bold text-primary">TEN EN CUENTA ESTA INFORMACIÓN LA CUAL
+              ES DE
+              SUMA IMPORTANCIA PARA NUESTROS USUARIOS</h5>
+          </div>
+          <div class="card-body">
+            <p>
+              La primera factura corresponde a los días de prorrateo a
+              partir de la instalación del servicio hasta la fecha de corte que
+              es el último día de cada mes. Este valor debe ser cancelado
+              a más tardar el último día del mes para evitar cortes en el
+              servicio, el asesor comercial es el encargado de informar al
+              titular el valor de dicho prorrateo.
+              La mensualidad depende del plan contratado. <br>
+              Instalación en un plazo máximo de 08 días hábiles. <br>
+              La factura se genera el 14 de cada mes.<br>
+              Fecha límite de pago es el 25 de cada mes.<br>
+              La fecha de corte es el último día de cada mes. <br>
+              Los usuarios pagan mes en curso
+            </p>
           </div>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
   </div>
-
-  {% endblock %} {% block javascript %} {% endblock %}
 </div>
+
+<div id="dos" class="tabcontent">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card shadow mb-4">
+        <div class="card-header py-3 text-center">
+          <h5 class="m-0 font-weight-bold text-primary">
+            Informar que tiene a su disposición
+            diferentes métodos de
+            pago:
+          </h5>
+        </div>
+        <div class="card-body">
+          <p>
+            • Oficinas: Pagos en efectivo.<br>
+            • Transferencias: Cuenta Corriente en Scotiabank Colpatria. Se hace efectivo al
+            siguiente día hábil.<br>
+            • PSE: Por la aplicación MiPagoAmigo, se hace efectivo al siguiente día hábil,
+            por la página www.tucable.net o escaneado el código QR en oficina, también
+            ingresando al
+            siguiente <a href="https://app.grupo-bit.com/intranet/#/payment/dHVfY2FibGU" target="_blank">
+              https://app.grupo-bit.com/intranet/#/payment/dHVfY2FibGU</a>
+            <br><br>
+            Las tarifas tienen vigencia hasta el 31 de diciembre
+            de cada año.<br>
+            El hecho de no recibir la factura NO EXONERA al cliente del
+            pago de su obligación.<br>
+            Es obligatorio proporcionar un correo electrónico para el
+            envío de la factura electrónica.<br>
+            Los retiros se pueden solicitar en cualquier día del mes, pero
+            se recomienda que se realicen entre el entre el 27 al 30 del
+            mes, con el fin de que pueda disfrutar del servicio todo el mes. (Deben ser
+            solicitados por el titular del
+            servicio o un tercero debidamente autorizado, quedar al
+            día y entregar el módem y su cargador en la oficina más
+            cercana)
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card shadow mb-4">
+          <div class="card-header py-3 text-center">
+            <h5 class="m-0 font-weight-bold text-primary">
+              Requisitos persona jurídica:
+            </h5>
+          </div>
+          <div class="card-body">
+            <p>
+              TuCable S.A.S instala hasta dos puntos de televisión, por
+              lo que si al momento de la instalación solicitó instalar un solo
+              punto y posteriormente solicita le instalemos el segundo,
+              debe pagar el valor de punto adicional después de
+              instalación ($30,000), se genera la orden de servicio de toma
+              adicional y se le informa al titular que la orden será atendida
+              en un tiempo máximo de 8 días hábiles.<br>
+              Cambios de clave gratuitos, puede solicitarlos a través de
+              línea de WhatsApp, donde le informarán el procedimiento a
+              seguir para dicha solicitud.<br>
+              Anexar al contrato un volante indicando los números a los que
+              se puede comunicar para solicitar soporte, solicitudes de
+              servicio o PQRS (Peticiones, quejas, reclamos y solicitudes).<br><br>
+              Recuerde nuestros canales de atención:
+            <ul>
+              <li>Oficinas físicas.</li>
+              <li>Página web: <a href="https://www.tucable.net/registro-de-pqr" target="_blank">
+                  www.tucable.net/registro-de-pqr/, </a></li>
+              <li> Correo electrónico: quejasyreclamos@tucable.net</li>
+              <li>Línea Comercial: 3205582644</li>
+              <li>Líneas de Whatsapp: 3156948966 - 3126342004</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+
+        <script>
+          function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+          
+          // Get the element with id="defaultOpen" and click on it
+          document.getElementById("defaultOpen").click();
+          </script>
+
+        {% endblock %} {% block javascript %} {% endblock %}
