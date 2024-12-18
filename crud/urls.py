@@ -1,5 +1,10 @@
 from . import views
 from django.urls import path
+from django.contrib.auth import logout
+from django.shortcuts import redirect
+def custom_logout(request):
+    logout(request)
+    return redirect('home')
 
 urlpatterns = [
     path('', views.index, name='index'),
@@ -21,6 +26,7 @@ urlpatterns = [
     path('change_password', views.changePassword, name='changePassword'),
     path('file/delete', views.changePassword, name='changePassword'),
     path('file/delete/<int:id>', views.deleteFiles, name='deleteFiles'),
+    path('logout/', custom_logout, name='logout'),
     
     #paginas ventas
     path('ventas/',views.ventas, name='ventas'),

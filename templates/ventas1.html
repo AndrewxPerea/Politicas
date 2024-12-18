@@ -1,5 +1,65 @@
 {% extends 'layout/app.html' %} {% load static %} {% block body %} {% include "elements/dropdownventas.html" %}
-<div class="container-fluid">
+<style>
+  .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+  .tabcontent {
+    animation: fadeEffect 1s;
+    /* Fading effect takes 1 second */
+  }
+
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'uno')" id="defaultOpen">Recuerda</button>
+  <button class="tablinks" onclick="openCity(event, 'dos')">Proceso</button>
+</div>
+
+
+
+<div id="uno" class="tabcontent">
+
   <h1 class="h3 mb-4 text-gray-800">Política de Ventas</h1>
   <div class="row">
     <div class="col-lg-12">
@@ -9,129 +69,150 @@
         </div>
         <div class="card-body">
           <p>
-            <ul>
-              <li>
-              El contrato y el recibo de caja deben ir en tinta negra, sin tachones ni borrones ni enmendaduras y no debe tener sino una sola
-              huella por hoja. </li><li>
-              Todas las hojas del contrato (originales y copias) deben ser firmadas por el titular del servicio y la firma debe ser la misma en 
+          <ul>
+            <li>
+              El contrato y el recibo de caja deben ir en tinta negra, sin tachones ni borrones ni enmendaduras y no
+              debe tener sino una sola
+              huella por hoja. </li>
+            <li>
+              Todas las hojas del contrato (originales y copias) deben ser firmadas por el titular del servicio y la
+              firma debe ser la misma en
               todos los campos, con huella digital que tome la falange completa, en el campo destinado para ello.</li>
-            </ul>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="row">
+        <div class="col-lg-6">
+
+          <!-- Circle Buttons -->
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">HUELLAS TOMADAS CORRECTAMENTE</h6>
+            </div>
+            <div class="card-body">
+              <img src="{% static 'assets/img/huellabien.png' %}" width="310" height="160">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card shadow mb-4">
+            <div class="card-header py-3 ">
+              <h5 class="m-0 font-weight-bold text-primary">
+                HUELLAS MAL TOMADAS APLICA DEVOLUCIÓN DE CONTRATO
+              </h5>
+            </div>
+            <div class="card-body item-c">
+              <img src="{% static 'assets/img/huellamal.png' %}" width="310" height="160">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="dos" class="tabcontent">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="card shadow mb-4">
+        <div class="card-header py-3 text-center">
+          <h5 class="m-0 font-weight-bold text-primary">Proceso</h5>
+        </div>
+        <div class="card-body">
+          <p>Diligenciar todos los espacios del contrato y del recibo de caja.<br>
+          <ul>
+            <li>
+              En el caso de la persona jurídica, en el campo Nombre/Razón Social, se registra el nombre de la empresa y
+              en identificación, el
+              número del NIT con el digito de verificación, las firmas y huellas, deben ser del Representante Legal con
+              su número de cédula.</li>
+            <li>
+              Al momento de registrar en sistema una persona jurídica el NIT debe ir sin el digito de verificación.
+            </li>
+            <li>
+              El correo electrónico es un campo obligatorio y debe ir en mayúsculas.</li>
+            <li>
+              Registrar 2 números telefónicos.</li>
+            <li>
+              Explicar políticas de pago, reconexión y retiros.</li>
+            <li>
+              No enviamos factura física. </li>
+            <li>
+              La factura se envía a través de mensaje de texto al número de teléfono principal.</li>
+            <li>
+              Si el usuario solicita que se envié la factura a su correo, se debe enviar la información a Laura
+              Arbeláez, en el departamento de
+              contabilidad para que valide y envíe la factura electrónica.</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card shadow mb-4">
+        <div class="card-header py-3 text-center">
+          <h5 class="m-0 font-weight-bold text-primary">
+            INFORMACIÓN IMPORTANTE PARA TENER EN CUENTA:
+          </h5>
+        </div>
+        <div class="card-body">
+          <p>
+            Por lo anterior cuando se haga actualización de correo electrónico se debe notificar a Laura Arbeláez para
+            que actualice en
+            contabilidad.<br>
+            En caso de haber pagado cable adicional o puntos de televisión adicionales, estos deben quedar registrados
+            en el recibo de caja,
+            especificando cuánto está pagando por cada concepto.<br>
+            La huella digital debe ser legible y tomada con un huellero de aceite.<br>
+          <ul>
+            <li>
+              Los días de instalación varían según la agencia o según disponibilidad del servicio.</li>
+            <li>
+              Se debe tener presente que la validación facial nos permite corroborar la identidad del titular del
+              servicio, cuando la firma en el
+              contrato es diferente a la del documento de identidad. En caso que el titular firme igual al documento que
+              presenta y se niegue a la
+              foto de validación, no hay inconveniente, ya que abra cumplido con el requisito de firmar como esta en el
+              documento de identidad. </li>
+            <li>
+              La foto de validación facial debe ser Nitida y permitir visualizar el numoer del contrato y la hoja
+              completa del contrato. </li>
+            <li>
+              Ejemplo de Validaciones faciales que son causal de devolución.
+            </li>
+          </ul>
           </p>
         </div>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div
-      id="carouselExampleAutoplaying"
-      class="carousel slide carousel-dark slide"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="row">
-            <div class="col-lg-6">
-
-              <!-- Circle Buttons -->
-              <div class="card shadow mb-4">
-                  <div class="card-header py-3">
-                      <h6 class="m-0 font-weight-bold text-primary">HUELLAS TOMADAS CORRECTAMENTE</h6>
-                  </div>
-                  <div class="card-body">
-                      <img src="{% static 'assets/img/huellabien.png' %}" width="310" height="160">
-                  </div>
-              </div>
-          </div>
-            <div class="col-lg-6">
-              <div class="card shadow mb-4">
-                <div class="card-header py-3 ">
-                  <h5 class="m-0 font-weight-bold text-primary">
-                   HUELLAS MAL TOMADAS APLICA DEVOLUCIÓN DE CONTRATO
-                  </h5>
-                </div>
-                <div class="card-body item-c">
-                  <img src="{% static 'assets/img/huellamal.png' %}" width="310" height="160">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="carousel-item ">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="card shadow mb-4">
-                <div class="card-header py-3 text-center">
-                  <h5 class="m-0 font-weight-bold text-primary">Proceso</h5>
-                </div>
-                <div class="card-body">
-                  <p>Diligenciar todos los espacios del contrato y del recibo de caja.<br>
-                    <ul>
-                      <li>
-                                        En el caso de la persona jurídica, en el campo Nombre/Razón Social, se registra el nombre de la empresa y en identificación, el
-                                        número del NIT con el digito de verificación, las firmas y huellas, deben ser del Representante Legal con su número de cédula.</li><li>
-                                        Al momento de registrar en sistema una persona jurídica el NIT debe ir sin el digito de verificación. </li><li>
-                                         El correo electrónico es un campo obligatorio y debe ir en mayúsculas.</li><li>
-                                         Registrar 2 números telefónicos.</li><li>
-                                         Explicar políticas de pago, reconexión y retiros.</li><li>
-                                         No enviamos factura física. </li><li>
-                                         La factura se envía a través de mensaje de texto al número de teléfono principal.</li><li>
-                                         Si el usuario solicita que se envié la factura a su correo, se debe enviar la información a Laura Arbeláez, en el departamento de
-                                        contabilidad para que valide y envíe la factura electrónica.</li>
-                                        </ul>
-                                    </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="card shadow mb-4">
-                <div class="card-header py-3 text-center">
-                  <h5 class="m-0 font-weight-bold text-primary">
-                    INFORMACIÓN IMPORTANTE PARA TENER EN CUENTA:
-                  </h5>
-                </div>
-                <div class="card-body">
-                   <p>
-                                    Por lo anterior cuando se haga actualización de correo electrónico se debe notificar a Laura Arbeláez para que actualice en
-                                    contabilidad.<br>
-                                    En caso de haber pagado cable adicional o puntos de televisión adicionales, estos deben quedar registrados en el recibo de caja, 
-                                    especificando cuánto está pagando por cada concepto.<br>
-                                    La huella digital debe ser legible y tomada con un huellero de aceite.<br><ul>
-                                    <li>
-                                     Los días de instalación varían según la agencia o según disponibilidad del servicio.</li><li>
-                                    Se debe tener presente que la validación facial nos permite corroborar la identidad del titular del servicio, cuando la firma en el 
-                                    contrato es diferente a la del documento de identidad. En caso que el titular firme igual al documento que presenta y se niegue a la 
-                                    foto de validación, no hay inconveniente, ya que abra cumplido con el requisito de firmar como esta en el documento de identidad. </li><li>
-                                    La foto de validación facial debe ser Nitida y permitir visualizar el numoer del contrato y la hoja completa del contrato. </li><li>
-                                    Ejemplo de Validaciones faciales que son causal de devolución.
-                                  </li></ul>
-                                </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
-
-  {% endblock %} {% block javascript %} {% endblock %}
 </div>
+</div>
+
+</div>
+
+<script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+</script>
+{% endblock %} {% block javascript %} {% endblock %}
